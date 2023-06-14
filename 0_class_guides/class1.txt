@@ -1,0 +1,26 @@
+CLASS 1:
+
+Introdiction:
+	Talk about myself
+	LinkedIn
+	They introduce themselves - get their names
+
+Structure:
+	1 - O que é lógica e algoritmos?
+	2 - O que é HTML e JavaScript?
+	3 - Instalando o Visual Studio Code!
+	4 - Compreendendo a estrutura base HTML.
+	5 - Entender a diferença do HTML e do JavaScript.
+	6 - Exibindo mensagens com alert e document.write.
+	7 - Utilizando variáveis.
+	8 - Obtendo dados via prompt!
+	9 - Operadores relacionais.
+	10 - Operadores lógicos.
+	11 - Condicional (If - Else).
+	12 - Exercícios.
+	13 - Upload.
+
+OBS:
+  Commit all code and exercises to github.
+  Make them type everything!
+  Github Desktop

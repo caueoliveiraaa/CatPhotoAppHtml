@@ -1,0 +1,50 @@
+CLASS 1 - 2: Chapters 1 - 5!
+
+1: Leia dois números do usuário e informe o resultado da soma dos dois números.
+
+2: Leia um número informado pelo usuário e informe se o número é positivo ou negativo.
+
+3: 	
+
+4: Crie um programa que leia um mês em formato de número (1 - 12) e printe em qual estação do ano o mês está.
+   OBS:
+	- Primavera = Setembro, Outubro, Novembro
+	- Verão = Dezembro, Janeiro, Fevereiro
+	- Outono = Março, Abril, Maio
+	- Inverno = Junho, Julho, Agosto
+
+5: Escreva um programa que leia a idade e o nome do usuário e printe essas informações usando concatenação.
+
+6: Leia a idade do usuário e informe quantos anos ele terá em vinte anos no futuro.
+
+7: Leia um número informado pelo usuário e informe se o número é impar ou par.
+
+8: Leia dois números do usuário, verifique se os números são positivos, se forem printe a soma, a subtração
+   a divisão, e a multiplicação dos dois números com 4 prints distintos. Caso o número seja negativo, printe
+   uma mensagem de aviso.
+
+9: Escreva um programa que leia a idade e o nome de 3 usuários distintos e printe a qual categoria eles pertencem.
+   	Criança: 0-12
+   	Adolescente: 13-19
+   	Adulto: 20-64
+	Idoso: 65+ 
+	
+	printar => usuário X pertence a categoria Y. (Exemplo)
+
+10: Crie um programa que solicite um número e verifique se ele é primo.
+    Um número primo é aquele que é divisível apenas por 1 e por ele mesmo.
+    Imprima "É primo" se for primo, e "Não é primo" caso contrário.
+
+11: Escreva um programa que solicite dois números ao usuário e determine se o primeiro número é maior,
+    menor ou igual ao segundo número. Exiba uma mensagem correspondente para cada caso.
+
+12: Leia a senha do usuário e peça para que ele informe a senha outra vez. Faça a verificação necessária
+    para saber se as senhas são iguais.
+
+13: Crie um programa que solicite a idade do usuário e verifique se ele pode votar.
+    No Brasil, apenas maiores de 16 anos podem votar. Imprima "Pode votar"
+    se a idade for igual ou maior que 16 e "Não pode votar" caso contrário.
+
+14: Crie um programa que leia uma letra informada pelo usuário e identifique se a letra é um vogal ou consoante.
+
+15: Leia um ano informado pelo usuário e printe se o ano é bisexto ou não.
