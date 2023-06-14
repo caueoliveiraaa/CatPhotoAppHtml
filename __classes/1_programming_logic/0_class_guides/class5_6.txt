@@ -1,0 +1,26 @@
+<CHAPTERS 10>
+
+# CLASS 5:
+	Structure:	
+		0 - Daily
+		1 - O que é uma função
+		2 - Vantagens em projetos
+		3 - Criando funções
+		4 - Funções com parâmetros
+		5 - Eventos (onClick, onChange e onKeyUp)
+		6 - Upload.
+		7 - Next class - Daily
+
+# Class 6:
+	Structure:	
+		0 - Daily
+		1 - Criar um CRUD - Primeiro projeto
+		2 - Exercícios 
+		3 - Upload
+		4 - Next class - Daily
+
+Videos:
+	Curso em Vid - Conditions Part 2: https://www.youtube.com/watch?v=EEStcIe8rAM&t=1548s
+	Curso em Vid - Looping Part 1: https://www.youtube.com/watch?v=5rZqYPKIwkY
+	Curso em Vid - Looping Part 2: https://www.youtube.com/watch?v=eX-lkN_Zahc
+	

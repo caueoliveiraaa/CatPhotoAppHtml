@@ -1,0 +1,36 @@
+<CHAPTERS 6/7>
+
+# CLASS 3:
+	Structure:	
+		0 - Daily
+		1 - Estrutura de escolha (Switch - Case)
+ 		2 - Conceito de laços de repetição
+		3 - Incrementadores (++) e decrementadores (--)
+		4 - Laço Enquanto (While)
+		5 - Laço Faça Enquanto (Do - While)
+		6 - Laço Para (For)
+		7 - Exercícios.
+		8 - Upload.
+		9 - Next class - Daily
+
+<CHAPTERS 8/9>
+
+# Class 4:
+	Structure:	
+		0 - Daily
+		1 - Conceitos do vetor
+		2 - Criando vetor
+		3 - Contando registros (length)
+		4 - Adicionando dados
+		5 - Percorrendo o vetor
+		6 - Alterando valores
+		7 - Excluindo informações
+		8 - Criando e manipulando uma matriz
+		9 - Upload.
+		10 - Next class - Daily
+
+Videos:
+	Curso em Vid - Conditions Part 2: https://www.youtube.com/watch?v=EEStcIe8rAM&t=1548s
+	Curso em Vid - Looping Part 1: https://www.youtube.com/watch?v=5rZqYPKIwkY
+	Curso em Vid - Looping Part 2: https://www.youtube.com/watch?v=eX-lkN_Zahc
+	Curso em Vid - Arrays: https://www.youtube.com/watch?v=XdkW62tkAgU

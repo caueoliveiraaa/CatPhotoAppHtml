@@ -1,0 +1,38 @@
+<CHAPTERS 1/5>
+
+# CLASS 1:
+	Introdiction:
+		Introduce myself - LinkedIn
+		They introduce themselves - get their names
+
+	Structure:	
+		0 - Daily
+		1 - O que é lógica e algoritmos?
+		2 - O que é HTML e JavaScript?
+		3 - Instalando o Visual Studio Code!
+		4 - Compreendendo a estrutura base HTML.
+		5 - Entender a diferença do HTML e do JavaScript.
+		6 - Exibindo mensagens com alert e document.write.
+		7 - Utilizando variáveis.
+		8 - Obtendo dados via prompt!
+		9 - Operadores relacionais.
+		10 - Operadores lógicos.
+		11 - Condicional (If - Else).
+		12 - Exercícios.
+		13 - Upload.
+		14 - Next class - Daily
+
+# CLASS 2:
+	Structure:
+		0 - Daily
+		1 - Exercícios.
+		2 - Next class - Daily
+
+OBS:
+  Commit all code and exercises to github.
+  Github Desktop
+
+Videos:
+	Hashtag - Lógica: https://www.youtube.com/watch?v=grcIjJ6bx8k
+	Hashtag - Configurar VSCode: https://www.youtube.com/watch?v=Zy3iaMZbPO8
+	Curso em Vid - Conditions Part 1: https://www.youtube.com/watch?v=cOdG4eACN2A
