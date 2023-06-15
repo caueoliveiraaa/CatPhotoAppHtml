@@ -1,0 +1,31 @@
+<CHAPTERS - 1/6>
+
+# CLASS 1:
+	Structure:
+		0 - Daily
+		1 - Uso do banco de dados
+		2 - DBA
+		3 - SGBD
+		4 - Instalando o banco de dados
+		5 - Criando e Excluíndo bases de dados
+		6 - Manipulando tabelas (criando, alterando e excluíndo)
+		7 - Comandos SQL Básicos (Insert, Select, Update e Delete)
+		8 - Utilizando a cláusula Where
+		9 - Ordenando dados
+		10 - Filtrando
+		11 - Selecionando colunas específicas
+		12 - Agrupar dados	
+ 		13 - Unificando informações (Max, Min, Avg e Count)
+		14 - Entre valores (Between)
+		15 - Exercícios
+		16 - Upload
+		17 - Nex Class - Daily
+
+# CLASS 2:
+	Structure:
+		0 - Daily
+		1 - Terminar Exercícios
+		2 - Upload
+		3 - Nex Class - Daily
+
+Videos:
