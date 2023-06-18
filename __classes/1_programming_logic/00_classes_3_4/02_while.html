@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While</title>
+</head>
+<body>
+    <script>
+        // Incrementando
+        console.log("Primeiro loop: ");
+        let i = 1;
+
+        while (i <= 10) {
+            console.log(i);
+            i++;
+        }
+        
+        // Decrementando
+        console.log("Segundo loop: ");
+        let j = 10;
+        
+        while (j >= 0) {
+            console.log(j);
+            j--;
+        }
+
+        // Usando valor para o while + ifs
+        let numero = parseInt(prompt("Informe um número: "));
+        if (numero > 0) {
+
+            if (numero >= 50 && numero < 100) {
+                console.log("Adicionando: ");
+
+                while (numero <= 100) {
+                    console.log(numero);
+                    numero++;
+                }
+
+            } else if (numero < 50) {
+                console.log("Subitraindo: ");
+
+                while (numero >= 0) {
+                    console.log(numero);
+                    numero--;
+                }
+
+            } else {
+                console.log("Informe um número entre 1 e 99!");
+            }
+
+        } else {
+            console.log("Informe um número válido!");
+        }
+    </script>
+</body>
+</html>
+
+

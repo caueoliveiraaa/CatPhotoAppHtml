@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+<body>
+    <script>
+        // Crie um sistema de votação para três candidatos. O eleitor poderá selecionar um dos três nomes,
+        // em seguida será contabilizado o voto para o candidato.
+
+        let candidatoA = 0;
+        let candidatoB = 0;
+        let candidatoC = 0;
+
+        let candidato = prompt("Informe o candidato (A, B ou C): ");
+
+        if (candidato === "A") {
+            candidatoA++;
+        } else if (candidato === "B") {
+            candidatoB++;
+        } else if (candidato === "C") {
+            candidatoC++;
+        } else {
+            console.log("Candidato inválido.");
+        }
+
+        candidato = prompt("Informe o candidato (A, B ou C): ");
+
+        if (candidato === "A") {
+            candidatoA++;
+        } else if (candidato === "B") {
+            candidatoB++;
+        } else if (candidato === "C") {
+            candidatoC++;
+        } else {
+            console.log("Candidato inválido.");
+        }
+
+        candidato = prompt("Informe o candidato (A, B ou C): ");
+
+        if (candidato === "A") {
+            candidatoA++;
+        } else if (candidato === "B") {
+            candidatoB++;
+        } else if (candidato === "C") {
+            candidatoC++;
+        } else {
+            console.log("Candidato inválido.");
+        }
+
+        console.log("Candidato A: " + candidatoA + " votos");
+        console.log("Candidato B: " + candidatoB + " votos");
+        console.log("Candidato C: " + candidatoC + " votos");
+    </script>
+</body>
+</html>
+
+

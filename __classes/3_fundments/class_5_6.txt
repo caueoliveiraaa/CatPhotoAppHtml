@@ -1,0 +1,27 @@
+Videos:
+    BEFoRE EXPlAINING - Hashtag oop 10 min: https://www.youtube.com/watch?v=97A_Cyyh-eU
+
+# CLASS 5:
+	Structure:
+        0 - Daily
+        1 - Classe
+        2 - Atributo
+        3 - Método
+        4 - Objeto
+        5 - Exercícios
+        6 - Upload
+        7 - Next Class - Daily
+
+# Class 6:
+	Structure:
+		0 - Daily
+        1 - Conceito de encapsulamento
+        2 - Public, private, protected e default
+        3 - Get e Set
+        4 - Construtor
+        5 - Exercícios
+        6 - Upload
+		7 - Next class - Daily
+
+Videos:
+    Hashtag: Python + MySQ: https://www.youtube.com/watch?v=_q3j25ACmQ4

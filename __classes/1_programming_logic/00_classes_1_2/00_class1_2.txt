@@ -20,7 +20,7 @@
 		11 - Condicional (If - Else).
 		12 - Exercícios.
 		13 - Upload.
-		14 - Next class - Daily
+		14 - Next class - Daily + Exercícios da apostila
 
 # CLASS 2:
 	Structure:

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversão</title>
+</head>
+<body>
+    <script>
+        // O usuário informa uma temperatura, em seguida poderá selecionar
+        // o tipo de conversão (Celsius e Fahrenheit).
+
+        // Ler dados
+        var temperatura = parseInt(prompt("Informe a temperatura: "));
+        var tipoConversao = prompt("Informe o tipo de conversão: ");
+
+        let resultado;
+        if (tipoConversao === "Celsius") {
+            resultado = (temperatura - 32) * (5 / 9);
+            resultado = resultado.toFixed(2);
+        } else if (tipoConversao === "Fahrenheit") {
+            resultado = temperatura * (9 / 5) + 32;
+            resultado = resultado.toFixed(2);
+        } else {
+            console.error("Tipo de conversão inválido.");
+        }
+        
+        console.log("O resultado da conversão é " + resultado + " graus " + tipoConversao + ".");
+    </script>
+</body>
+</html>
+
+

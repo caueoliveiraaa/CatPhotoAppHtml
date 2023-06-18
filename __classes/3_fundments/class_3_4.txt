@@ -1,0 +1,22 @@
+<EXAMPES AND DoCS>
+
+# CLASS 3:
+	Structure:
+        0 - Daily
+        1 - Templates
+        2 - Arquivos estáticos
+        3 - Enviando e recebendo dados via front e back
+        4 - Exercícios Flask
+        5 - Upload
+        6 - Next Class - Daily
+
+# Class 4:
+	Structure:
+		0 - Daily
+        1 - CRUD Flask
+        2 - Upload
+		3 - Next class - Daily
+
+Videos:
+    for next class - Código Fonte oop: https://www.youtube.com/watch?v=QY0Kdg83orY
+                   - Hashtag oop 50 min: https://www.youtube.com/watch?v=gomDSZaay3E
