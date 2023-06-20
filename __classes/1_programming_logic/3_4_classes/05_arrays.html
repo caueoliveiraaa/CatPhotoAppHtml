@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While</title>
+</head>
+<body>
+    <script>
+        // Tamanho do array imutável
+        const lista_frutas = ["Banana", "Laranja", "Maça", "Manga"]
+        let tamanho_frutas = lista_frutas.length
+        
+        // Tamanho do array mutável
+        let lista_cidades = ["Blumenau", "Itajaí", "Brusque"]
+        let tamanho_cidades = lista_cidades.length
+
+        console.log(
+            "Tamanho da lista de frutas: " + tamanho_frutas + " items." +
+            " e tamanho lista de cidades: " + tamanho_cidades + " items."
+        )
+
+
+
+
+        // Métodos/Funções para arrays
+        let lista_numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        console.log("\nLista de números: " + lista_numeros)
+        
+        let ultimo_numero = lista_numeros.pop()  // Retorna último item
+        console.log("Removeu último item: " + ultimo_numero + " de lista_numeros")
+        console.log("\nLista de números: " + lista_numeros)
+        
+        lista_numeros.push(100)  // Adiciona item no final
+        console.log("\nLista de números: " + lista_numeros)
+        
+        
+        
+        // Index dos(as) arrays/listas
+        
+        let lista_frutas_2 = ["Banana", "Laranja", "Maça", "Manga", "Melância"]
+
+        console.log("\nArray lista_frutas_2: " + lista_numeros)
+        for (let i = 0; lista_frutas_2.length; i++) {
+            console.log(lista_frutas_2[i])
+        }
+        
+        lista_frutas_2[0] = "Mexirica" // Substituindo valor
+        
+        console.log("\nArray lista_frutas_2: " + lista_numeros)
+        for (let i = 0; i < lista_frutas_2.length; i++) {
+            console.log(lista_frutas_2[i])
+        }
+
+    </script>
+</body>
+</html>
+
+

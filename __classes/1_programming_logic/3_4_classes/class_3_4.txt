@@ -1,7 +1,7 @@
 <CHAPTERS 6/7>
 
 # CLASS 3:
-	Structure:	
+	Structure:
 		0 - Daily
 		1 - Estrutura de escolha (Switch - Case)
  		2 - Conceito de laços de repetição
@@ -13,7 +13,8 @@
 		8 - Upload.
 		9 - Next class - Daily
 
-		vid: Curso em Vid - Looping Part 1: https://www.youtube.com/watch?v=5rZqYPKIwkY
+		vid:
+			Curso em Vid - Looping Part 1: https://www.youtube.com/watch?v=5rZqYPKIwkY
 
 <CHAPTERS 8/9>
 
