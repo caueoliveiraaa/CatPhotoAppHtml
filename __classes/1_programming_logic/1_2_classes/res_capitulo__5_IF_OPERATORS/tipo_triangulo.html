@@ -17,13 +17,13 @@
 
         // Solicitando as larguras dos lados do triângulo ao usuário
         let direita = parseFloat(prompt("Digite a largura do lado direito do triângulo:"))
-        let baixo = parseFloat(prompt("Digite a largura do lado inferior do triângulo:"))
+        let inferior = parseFloat(prompt("Digite a largura do lado inferior do triângulo:"))
         let esquerda = parseFloat(prompt("Digite a largura do lado esquerdo do triângulo:"))
 
         // Verificando o tipo de triângulo
-        if (direita === baixo && baixo === esquerda) {
+        if (direita === inferior && inferior === esquerda) {
             console.log("Triângulo Equilátero")
-        } else if (direita !== baixo && baixo !== esquerda && direita !== esquerda) {
+        } else if (direita !== inferior && inferior !== esquerda && direita !== esquerda) {
             console.log("Triângulo Escaleno")
         } else {
             console.log("Triângulo Isósceles")

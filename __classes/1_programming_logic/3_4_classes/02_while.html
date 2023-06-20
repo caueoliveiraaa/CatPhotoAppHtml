@@ -9,29 +9,35 @@
 <body>
     <script>
         // Incrementando
-        console.log("Primeiro loop: ")
+        console.log("\nPrimeiro loop: ")
         
         let i = 1
         while (i <= 10) {
-            console.log("Incrementando: " + i)
+            console.log("Incrementando: ", i)
             i++
         }
         
+
+
+        
         // Decrementando
-        console.log("Segundo loop: ")
+        console.log("\nSegundo loop: ")
         
         let j = 10
         while (j >= 0) {
-            console.log("Decrementando:" + j)
+            console.log("Decrementando:", j)
             j--
         }
+
+
+
 
         // Usando valor para o while + ifs
         let numero = parseInt(prompt("Informe um número: "))
         if (numero > 0) {
 
             if (numero >= 50 && numero < 100) {
-                console.log("Adicionando: ")
+                console.log("\nAdicionando: ")
 
                 while (numero <= 100) {
                     console.log(numero)
@@ -39,7 +45,7 @@
                 }
 
             } else if (numero < 50) {
-                console.log("Subitraindo: ")
+                console.log("\nSubitraindo: ")
 
                 while (numero >= 0) {
                     console.log(numero)
@@ -54,6 +60,8 @@
             console.log("Informe um número válido!")
         }
         
+
+
         // Parando loop manualmente
         let rodar_loop = true
         while (rodar_loop == true) {
@@ -66,10 +74,12 @@
 
         }
 
+
+
         // Printar conteúdo informado enquanto loop opera
         let contador = 0
         while (contador <= 10) {
-            valor = prompt("Informe o " + contador  + "º valor: ")
+            valor = prompt("\nInforme o " + contador  + "º valor: ")
             console.log("Você informou: " + valor)
             console.log("variável contador: " + contador)
             contador++

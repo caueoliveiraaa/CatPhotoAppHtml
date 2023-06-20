@@ -8,11 +8,23 @@
 </head>
 <body>
     <script>
-        // Ler dados
-        var numero1 = parseInt(prompt("Informe o primeiro número "));
-        var numero2 = parseInt(prompt("Informe o segundo número: "));
-
-
+        let text = ''
+        let i = 0
+        
+        // Execute o código pelo menos uma vez e continue se a condição for true
+        do {
+            console.log(text)
+            i++
+        } while (i < 5)
+        
+        i = 0  // Sobrescrever valor da variável
+        let texto = ''
+        do {
+            // Ler o prompt pelo menos uma vez
+            texto = prompt('Informe um valor (0 para parar)')
+            i++
+            console.log(i, ' texto informado: ', texto)
+        } while (texto != '0')
     </script>
 </body>
 </html>

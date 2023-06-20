@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+<body>
+    <script>
+        // Crie um conversor de moedas. Será informado os valores das conversões:
+        // ○ Real para Dólar 
+        // ○ Dólar para Real 
+        // ○ Real para Euro 
+        // ○ Euro para Real
+
+        // Ler dados
+        let valor_1 = parseInt(prompt("Informe o primeiro valor para converter de Real para Dólar: "))
+        let valor_2 = parseInt(prompt("Informe o segundo valor para converter de Dólar para Real: "))
+        let valor_3 = parseInt(prompt("Informe o terceiro valor para converter de Real para Euro: "))
+        let valor_4 = parseInt(prompt("Informe o segundo valor para converter de Euro para Real: "))
+
+        // Printando conversões
+        console.log("Considerando a cotação do dólar como 5.25 (Real para Dólar): " + valor_1 / 5.25)
+        console.log("Considerando a cotação do dólar como 5.25 (Dólar para Real): " + valor_2 * 5.25)
+        console.log("Considerando a cotação do euro como 6.13 (Real para Euro): " + valor_3 / 6.13)
+        console.log("Considerando a cotação do euro como 6.13 (Euro para Real): " + valor_4 * 6.13)
+    </script>
+</body>
+</html>
+
+

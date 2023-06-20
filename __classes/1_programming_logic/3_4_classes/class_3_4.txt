@@ -31,6 +31,6 @@
 		9 - Upload.
 		10 - Next class - Daily
 
-	vid:
-		Curso em Vid - Looping Part 2: https://www.youtube.com/watch?v=eX-lkN_Zahc
-		Curso em Vid - Arrays: https://www.youtube.com/watch?v=XdkW62tkAgU
+		vid:
+			Curso em Vid - Looping Part 2: https://www.youtube.com/watch?v=eX-lkN_Zahc
+			Curso em Vid - Arrays: https://www.youtube.com/watch?v=XdkW62tkAgU

@@ -13,28 +13,28 @@
         // informada. Cadastre ao menos três países diferentes
 
         // Função para retornar o horário de um país com base no horário informado
-        let horarioPais = 0
-        let horarioBrasil = parseInt(prompt("Informe horário no Brasil: "))
+        let horario_pais = 0
+        let horario_brasil = parseInt(prompt("Informe horário no Brasil: "))
         let pais = prompt("Informe o país: ")
     
         switch (pais.toLowerCase()) {
             case "brasil":
-                horarioPais = horarioBrasil
+                horario_pais = horario_brasil
                 break
 
             case "estados unidos":
                 // Exemplo: fuso horário dos EUA é -3 em relação ao Brasil
-                horarioPais = horarioBrasil - 3 
+                horario_pais = horario_brasil - 3 
                 break
 
             case "japao":
                 // Exemplo: fuso horário do Japão é +12 em relação ao Brasil
-                horarioPais = horarioBrasil + 12
+                horario_pais = horario_brasil + 12
                 break
 
             case "australia":
                 // Exemplo: fuso horário da Austrália é +14 em relação ao Brasil
-                horarioPais = horarioBrasil + 14 
+                horario_pais = horario_brasil + 14 
                 break
 
             default:
@@ -42,13 +42,13 @@
             }
             
         // Verificação e ajuste para exibir o horário dentro do intervalo 0-23
-        if (horarioPais < 0) {
-            horarioPais += 24
-        } else if (horarioPais > 23) {
-            horarioPais -= 24
+        if (horario_pais < 0) {
+            horario_pais += 24
+        } else if (horario_pais > 23) {
+            horario_pais -= 24
         }
     
-        console.log("Horário em " + pais + ": " + horarioPais + "h")
+        console.log("Horário em " + pais + ": " + horario_pais + "h")
     </script>
 </body>
 </html>

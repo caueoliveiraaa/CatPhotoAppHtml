@@ -1,8 +1,12 @@
 - Add students repo to git
 - Use real job exercises when creating them
 - Finish logic classes
+- Add more explanation on class files
 - Prepare Python for Ana
-- Prepare JS sheet
+- Prepare JS sheet (built-in)
 - Prepare operators sheet
 - Reorganize files
 - Add readme to all
+
+
+- Separate whatsapp group
