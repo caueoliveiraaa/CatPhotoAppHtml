@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loop</title>
+</head>
+<body>
+    <script>
+        // Desenvolva um sistema que o usuário informa cinco números através do comando
+        // prompt, em seguida exiba os valores informados e mostre a soma desses valores.
+
+        // Solicitar cinco números ao usuário
+        let numeros = []
+        let numero = ''
+
+        for (let i = 0; i < 5; i++) {
+            numero = prompt("Digite o número " + (i + 1))
+            numeros.push(parseFloat(numero))
+        }
+
+        // Exibir os valores informados com join
+        console.log("Valores informados: " + numeros.join(", "))
+
+        // Calcular a soma dos valores
+        var soma = 0
+        for (var j = 0; j < numeros.length; j++) {
+            soma += numeros[j]
+        }
+
+        // Exibir a soma
+        console.log("A soma dos valores é: " + soma)
+    </script>
+</body>
+</html>
+
+

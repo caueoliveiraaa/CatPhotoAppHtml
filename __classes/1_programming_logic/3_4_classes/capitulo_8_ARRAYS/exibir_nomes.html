@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loop</title>
+</head>
+<body>
+    <script>
+        // Crie um laço que peça nomes, poderão ser armazenados vários nomes, não há uma
+        // quantidade mínima nem máxima. Quando informada a palavra sair, exiba todos os
+        // nomes e informe a quantidade de nomes cadastrados.
+
+        // Array para armazenar os nomes
+        let nomes = []
+
+        // Loop para solicitar os nomes (loop infinito)
+        while (true) {
+            let nome = prompt("Digite um nome (ou 'sair' para finalizar):")
+        
+            // Verificar se o usuário digitou 'sair'
+            if (nome.toLowerCase() === "sair") {
+                break
+            }
+        
+            // Armazenar o nome no array
+            nomes.push(nome)
+        }
+
+        // Exibir os nomes cadastrados
+        console.log("Nomes cadastrados:")
+        for (let i = 0; i < nomes.length; i++) {
+            console.log(nomes[i])
+        }
+
+        // Exibir a quantidade de nomes cadastrados
+        console.log("Quantidade de nomes cadastrados: " + nomes.length)
+    </script>
+</body>
+</html>
+
+
