@@ -1,0 +1,6 @@
+- Use real job exercises when creating them
+- Finish logic classes
+- Prepare Python for Ana
+- Prepare JS sheet
+- Prepare operators sheet
+- Reorganize files
