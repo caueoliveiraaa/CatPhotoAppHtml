@@ -3,3 +3,4 @@
 - Prepare Python for Ana
 - Prepare JS sheet
 - Prepare operators sheet
+- Reorganize files
