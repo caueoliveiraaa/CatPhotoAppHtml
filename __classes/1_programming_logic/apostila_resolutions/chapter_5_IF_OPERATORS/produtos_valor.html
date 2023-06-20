@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Haverá uma lista com três produtos que uma lanchonete vende, o usuário
+        // precisa informar o código do produto, em seguida o valor pago por ele. Nosso
+        // sistema precisa retornar o troco que deve ser dado ao cliente, valide caso o
+        // cliente informe um pagamento inferior ao valor do pedido.
+        // Código Pedido Valor:
+        //  1 Pizza R$ 12,00
+        //  2 Pão de Queijo R$ 4,00
+        //  3 Macarrão R$ 16,00
+
+        // Solicitando o código do produto e o valor pago ao usuário
+        let codigoProduto = parseInt(prompt("Digite o código do produto: "))
+        let valorPago = parseFloat(prompt("Digite o valor pago: "))
+
+        // Variáveis para armazenar o valor do pedido e o troco a ser dado
+        let valorPedido = 0
+        let troco = 0
+
+        // Verificando o código do produto e atribuindo o valor correspondente
+        if (codigoProduto === 1) {
+            valorPedido = 12.00
+        } else if (codigoProduto === 2) {
+            valorPedido = 4.00
+        } else if (codigoProduto === 3) {
+            valorPedido = 16.00
+        } else {
+            console.error("Código do produto inválido.")
+        }
+
+        // Printar troco
+        if (valorPago >= valorPedido) {
+            troco = valorPago - valorPedido
+            console.log("Troco a ser dado: R$" + troco.toFixed(2))
+        } else {
+            console.log("Valor pago é inferior ao valor do pedido.")
+        }
+    </script>
+</body>
+</html>

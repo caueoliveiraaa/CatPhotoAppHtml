@@ -18,15 +18,14 @@
 		13 - GIT - Upload. + Github Desktop.
 		14 - Next class - Daily
 
-Videos:
-	Hashtag - Lógica: https://www.youtube.com/watch?v=grcIjJ6bx8k
-	Hashtag - Configurar VSCode: https://www.youtube.com/watch?v=Zy3iaMZbPO8
+		vid: Hashtag - Lógica: https://www.youtube.com/watch?v=grcIjJ6bx8k
+			 Hashtag - Configurar VSCode: https://www.youtube.com/watch?v=Zy3iaMZbPO8
+			 Curso em Vid - Conditions Part 1: https://www.youtube.com/watch?v=cOdG4eACN2A
 
 # CLASS 2:
 	Structure:
 		0 - Daily
-		1 - Exercícios.
+		1 - Exercícios + cmd !
 		2 - Next class - Daily
 
-Videos:
-	Curso em Vid - Conditions Part 1: https://www.youtube.com/watch?v=cOdG4eACN2A
+		vid: Curso em Vid - Conditions Part 2: https://www.youtube.com/watch?v=EEStcIe8rAM&t=1548s
