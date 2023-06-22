@@ -8,23 +8,24 @@
 </head>
 <body>
     <script>
-        let text = ''
+        let texto_1 = ''
         let i = 0
         
         // Execute o código pelo menos uma vez e continue se a condição for true
         do {
-            console.log(text)
+            console.log(texto_1)
             i++
         } while (i < 5)
         
-        i = 0  // Sobrescrever valor da variável
-        let texto = ''
+        let j = 0  
+        let texto_2 = ''
+
         do {
             // Ler o prompt pelo menos uma vez
-            texto = prompt('Informe um valor (0 para parar)')
-            i++
-            console.log(i, ' texto informado: ', texto)
-        } while (texto != '0')
+            texto_2 = prompt('Informe um valor (0 para parar)')
+            console.log((j + 1), 'º texto informado_2: ', texto_2)
+            j++
+        } while (texto_2 != '0')
     </script>
 </body>
 </html>

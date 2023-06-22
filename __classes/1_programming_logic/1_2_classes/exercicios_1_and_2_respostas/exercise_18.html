@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 18</title>
+</head>
+<body>
+    <script>
+        // Ler dados
+        let idade = parseInt(prompt('Digite a idade:'))
+        let prompt_msg = 'Possui carteira de motorista? (sim ou não)'
+        let possui_carteira = prompt(prompt_msg).toLowerCase() === 'sim'  // Retorna um valor boolean
+
+        // Verificar se a pessoa pode dirigir
+        if (idade >= 18 && possui_carteira) {
+            console.log('A pessoa pode dirigir.')
+
+        } else {
+            console.log('A pessoa não pode dirigir.')
+
+        }
+    </script>
+</body>
+</html>
+
+

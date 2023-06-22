@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 14</title>
+</head>
+<body>
+    <script>
+        // Leia a letra do usuário
+        let letra = prompt('Digite uma letra:')
+
+        // Verificar se foi informado um texto
+        if (typeof letra === 'string') {
+            // Converta a letra para minúscula para facilitar a verificação
+            letra = letra.toLowerCase()
+
+            // Verifica se a letra é uma vogal ou consoante
+            if (letra === 'a' || letra === 'e' || letra === 'i' || letra === 'o' || letra === 'u') {
+                console.log('A letra digitada é uma vogal.')
+            } else {
+                console.log('A letra digitada é uma consoante.')
+            }
+        }
+    </script>
+</body>
+</html>

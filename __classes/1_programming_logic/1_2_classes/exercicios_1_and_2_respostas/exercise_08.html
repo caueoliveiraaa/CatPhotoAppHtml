@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 08</title>
+</head>
+<body>
+    <script>
+        // Ler números
+        let numero_1 = parseFloat(prompt('Digite o primeiro número:'))
+        let numero_2 = parseFloat(prompt('Digite o segundo número:'))
+
+        // Validar números
+        if (isNaN(numero_1) || isNaN(numero_2)) {
+            console.error('Entrada inválida. Por favor, digite números válidos.')
+            
+        // Verificar se números são positivos
+        } else if (numero_1 > 0 && numero_2 > 0) {
+            console.log('Números informados: ' + numero_1 + ' e ' + numero_2)
+
+            // Printar soma
+            let soma = numero_1 + numero_2;
+            console.log('A soma dos números é:', soma)
+
+            // Printar subtração
+            let subtracao = numero_1 - numero_2;
+            console.log('A subtração dos números é:', subtracao)
+
+            // Printar multiplicação
+            let multiplicacao = numero_1 * numero_2;
+            console.log('A multiplicação dos números é:', multiplicacao)
+
+            // Printar divisão e módulo se número não for zero
+            if (numero_1 !== 0 && numero_2 !== 0) {
+                let divisao = numero_1 / numero_2
+                console.log('A divisão dos números é:', divisao)
+
+                let modulo = numero_1 % numero_2;
+                console.log('O resto da divisão dos números é:', modulo)
+
+            } else {
+                console.warn('Não é possível dividir números por zero!')
+            }
+
+        } else {
+            console.warn('Os números devem ser positivos.')
+
+        }
+    </script>
+</body>
+</html>

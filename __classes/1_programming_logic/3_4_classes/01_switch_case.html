@@ -9,48 +9,50 @@
 <body>
     <script>
         // Ler dados
-        let dia = parseInt(prompt("Informe o dia: "))
+        let dia = parseInt(prompt('Informe o dia: '))
         let dia_nome
         
         // Escolher baseado no dia como número
         switch (dia) {
             case 0:
-                dia_nome = "Domingo"
+                dia_nome = 'Domingo'
                 break
 
             case 1:
-                dia_nome = "Segunda-feira"
+                dia_nome = 'Segunda-feira'
                 break
 
             case 2:
-                dia_nome = "Terça-feira"
+                dia_nome = 'Terça-feira'
                 break
 
             case 3:
-                dia_nome = "Quarta-feira"
+                dia_nome = 'Quarta-feira'
                 break
 
             case 4:
-                dia_nome = "Quinta-feira"
+                dia_nome = 'Quinta-feira'
                 break
 
             case 5:
-                dia_nome = "Sexta-feira"
+                dia_nome = 'Sexta-feira'
                 break
 
             case 6:
-                dia_nome = "Sábado"
+                dia_nome = 'Sábado'
                 break
                 
             default:
-                dia_nome = "Input inválido"
+                dia_nome = 'Input inválido'
         }
 
         // Validar o dia informado
         if (dia >= 0 && dia <= 6) {
-            console.log("O número " + dia + " corresponde ao dia " + dia_nome)
+            console.log('O número ' + dia + ' corresponde ao dia ' + dia_nome)
+
         } else {
-            console.log("O número " + dia + " não corresponde a nenhum dia da semana. " + dia_nome)
+            console.log('O número ' + dia + ' não corresponde a nenhum dia da semana. ' + dia_nome)
+            
         }
     </script>
 </body>

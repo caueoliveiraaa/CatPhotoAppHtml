@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01</title>
+</head>
+<body>
+    <script>
+        // Ler dados
+        var numero_1 = parseInt(prompt('Entrar primeiro número: '))
+        var numero_2 = parseInt(prompt('Entrar segundo número: '))
+
+        // Verificar se input é válido
+        if (isNaN(numero_1) || isNaN(numero_2)) {
+            console.log('Entre números válidos!')
+            
+        } else {
+            // Somar números 
+            var soma = numero_1 + numero_2
+            
+            // Printar resultado
+            console.log('Soma de ' + numero_1 + ' + ' + numero_2 + ' = ' + soma)
+        }
+    </script>
+</body>
+</html>
