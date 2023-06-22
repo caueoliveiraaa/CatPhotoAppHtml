@@ -16,11 +16,11 @@
         let nomes = []
 
         // Loop para solicitar os nomes (loop infinito)
-        while (true) {
-            let nome = prompt("Digite um nome (ou 'sair' para finalizar):")
+        while (true) {  
+            let nome = prompt('Digite um nome (ou "sair" para finalizar):')
         
             // Verificar se o usuário digitou 'sair'
-            if (nome.toLowerCase() === "sair") {
+            if (nome.toLowerCase() === 'sair') {
                 break
             }
         
@@ -29,13 +29,13 @@
         }
 
         // Exibir os nomes cadastrados
-        console.log("Nomes cadastrados:")
+        console.log('Nomes cadastrados:')
         for (let i = 0; i < nomes.length; i++) {
             console.log(nomes[i])
         }
 
         // Exibir a quantidade de nomes cadastrados
-        console.log("Quantidade de nomes cadastrados: " + nomes.length)
+        console.log('Quantidade de nomes cadastrados: ' + nomes.length)
     </script>
 </body>
 </html>
