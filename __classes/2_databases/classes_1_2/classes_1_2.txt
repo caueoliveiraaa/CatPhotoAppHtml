@@ -21,7 +21,7 @@
 		16 - Upload
 		17 - Nex Class - Daily
 
-# CLASS 2:
+# CLASS 2:	
 	Structure:
 		0 - Daily
 		1 - Terminar Exercícios
