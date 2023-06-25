@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <script>
+        function sumEvenNumbers(start, end) {
+        var sum = 0;
+
+        for (var i = start; i <= end; i++) {
+            if (i % 2 === 0) {
+            sum += i;
+            }
+        }
+
+        return sum;
+        }
+
+        var startNum = parseInt(prompt("Digite o número inicial do intervalo:"));
+        var endNum = parseInt(prompt("Digite o número final do intervalo:"));
+        var result = sumEvenNumbers(startNum, endNum);
+        console.log("A soma dos números pares no intervalo é: " + result);
+    </script>
+</body>
+</html>
+
+

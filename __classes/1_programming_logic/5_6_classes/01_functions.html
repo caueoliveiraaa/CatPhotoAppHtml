@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <script>
+        // Função para calcular o produto de p1 e p2
+        function minha_funcao(p1, p2) {
+            return p1 * p2
+        }
+                
+        // Mostrar resultado de minhaFuncao
+        console.log(minha_funcao())
+
+
+        // Função usando while loop
+        function contar_ate_dez() {
+            var contador = 1
+
+            while (contador <= 10) {
+                console.log(contador)
+                contador++
+            }
+        }
+
+        // Chamando função
+        contar_ate_dez()
+
+
+        // Função usando if-else-if
+        function verificar_dai_semana(dia) {
+            if (dia === 'segunda') {
+                console.log('É segunda-feira!')
+            } else if (dia === 'terca') {
+                console.log('É terça-feira!')
+            } else if (dia === 'quarta') {
+                console.log('É quarta-feira!')
+            } else if (dia === 'quinta') {
+                console.log('É quinta-feira!')
+            } else if (dia === 'sexta') {
+                console.log('É sexta-feira!')
+            } else if (dia === 'sabado') {
+                console.log('É sábado!')
+            } else if (dia === 'domingo') {
+                console.log('É domingo!')
+            } else {
+                console.log('Dia inválido!')
+            }
+        }
+
+        let dia = prompt('Informe o dia para a função verificar_dai_semana:')
+        verificar_dai_semana(dia)
+
+
+        // Função usando for loop
+        function calcular_media_notas(notas) {
+            var soma = 0
+
+            for (var i = 0; i < notas.length; i++) {
+                soma += notas[i]
+            }
+
+            var media = soma / notas.length
+            return media
+        }
+
+        // Exemplo de uso da função
+        var notas_dos_alunos = [7.5, 8.2, 6.8, 9.0, 7.3]
+        var media_das_notas = calcular_media_notas(notas_dos_alunos)
+
+        console.log("A média das notas dos alunos é: " + media_das_notas)
+       
+    </script>
+</body>
+</html>
+
+

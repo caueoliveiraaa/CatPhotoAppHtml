@@ -13,9 +13,6 @@
 		8 - Upload.
 		9 - Next class - Daily
 
-		vid:
-			Curso em Vid - Looping Part 1: https://www.youtube.com/watch?v=5rZqYPKIwkY
-
 <CHAPTERS 8/9>
 
 # Class 4:
@@ -31,7 +28,3 @@
 		8 - Criando e manipulando uma matriz
 		9 - Upload.
 		10 - Next class - Daily
-
-		vid:
-			Curso em Vid - Looping Part 2: https://www.youtube.com/watch?v=eX-lkN_Zahc
-			Curso em Vid - Arrays: https://www.youtube.com/watch?v=XdkW62tkAgU

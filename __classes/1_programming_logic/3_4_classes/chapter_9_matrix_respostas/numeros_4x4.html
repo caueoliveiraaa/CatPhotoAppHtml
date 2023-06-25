@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de programação</title>
+</head>
+<body>
+    
+    <script>
+        // c - Crie uma matriz 4x4 e peça para o usuário informar 16 números. Quando informados
+        // os 16 números, exiba cada um deles, além da soma e a média dos valores.
+
+        // Criando a matriz 4x4
+        let matriz = []
+
+        // Solicitando ao usuário os 16 números e preenchendo a matriz
+        for (let i = 0; i < 4; i++) {
+            matriz[i] = []
+
+            for (let j = 0; j < 4; j++) {
+                let numero = parseFloat(prompt('Informe o número da posição [' + i + '][' + j + ']:'));
+                matriz[i][j] = numero
+            }
+        }
+
+        // Exibindo cada número da matriz
+        console.log('Números informados:')
+        for (let i = 0; i < 4; i++) {
+            for (let j = 0; j < 4; j++) {
+                console.log(matriz[i][j])
+            }
+        }
+
+        // Calculando a soma dos valores
+        let soma = 0
+        for (let i = 0; i < 4; i++) {
+            for (let j = 0; j < 4; j++) {
+                soma += matriz[i][j]
+            }
+        }
+
+        // Calculando a média dos valores
+        let media = soma / 16
+
+        // Exibindo a soma e a média dos valores
+        console.log('Soma dos valores: ' + soma)
+        console.log('Média dos valores: ' + media)
+
+    </script>
+
+</body>
+</html>

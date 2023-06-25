@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <title>APP</title>
+
+    <!-- Código em CSS -->
+    <style>
+        body {
+            background-color: black;
+            color: skyblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        button {
+            background-color: skyblue;
+            color: black;
+            padding:.5rem 2rem;
+            border: none;
+            margin: 5px;
+            font-size: large;
+        }
+
+        input {
+            background-color: white;
+            color: black;
+            padding:.5rem 2rem;
+            border: none;
+            font-size: large;
+        }
+    </style>
+
+    <!-- Usar font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Link para buscar icones: https://fontawesome.com/v4/icons/#web-application -->
+</head>
+
+<body>
+    <!-- Botões para a aplicação  -->
+    <div class="button-container">
+        <h1><i class="fa fa-server" aria-hidden="true"></i> Administrador de tarefas:</h1>
+        <input type="text" id="input_tarefa">
+        <button id="botao_criar">CREATE</button>
+        <button id="botao_ler">DISPLAY</button>
+        <button id="botao_atualizar">UPDATE</button>
+        <button id="botao_deletar">DELETE</button>
+        <button onclick="location.reload()">RESTART</button>
+    </div>
+
+    <!-- Código JS para o APP -->
+    <script>
+        let taferas_lista = []
+
+        // Conectar funções com os botões acima
+        document.getElementById('botao_criar').addEventListener('click', criar_tarefa)
+        document.getElementById('botao_ler').addEventListener('click', mostrar_tarefa)
+        document.getElementById('botao_atualizar').addEventListener('click', atualizar_tarefa)
+        document.getElementById('botao_deletar').addEventListener('click', deletar_terefa)
+
+        function criar_tarefa() {
+            // Função para criar uma tarefa nova
+
+            let task = document.getElementById('input_tarefa').value
+            if (task) {
+                taferas_lista.push(task)
+                alert('Nova tarefa adicionada: ' + task)
+            }
+        }
+
+        function mostrar_tarefa() {
+            // Função para mostrar todas as tarefas
+            
+            if (taferas_lista.length === 0) {
+                alert('Não há tarefas disponíveis.')
+            } else {
+                let tarefas_armazenadas = 'Tarefas:\n'
+                for (let i = 0; i < taferas_lista.length; i++) {
+                    tarefas_armazenadas += i + ':   ' + taferas_lista[i] + '\n'
+                }
+                alert(tarefas_armazenadas)
+            }
+        }
+        
+        function atualizar_tarefa() {
+            // Função para atualizar tarefa via índice
+            
+            let indice = prompt('Entre com o índice da tarefa:')
+            if (indice >= 0 && indice < taferas_lista.length) {
+                let tarefa_atualizada = prompt('Informe a nova tarefa:')
+                if (tarefa_atualizada) {
+                    taferas_lista[indice] = tarefa_atualizada
+                    alert('Tarefa atualizada para ' + tarefa_atualizada + 'com sucesso!')
+                }
+            } else {
+                alert('Índice inválido!')
+            }
+        }
+        
+        function deletar_terefa() {
+            // Função para deletar tarefa via índice
+
+            let indice = prompt('Entre com o índice da tarefa:')
+            if (indice >= 0 && indice < taferas_lista.length) {
+                taferas_lista.splice(indice, 1)
+                alert('Tarefa deletada com sucesso!')
+            } else {
+                alert('Índice inválido!')
+            }
+        }
+    </script>
+</body>

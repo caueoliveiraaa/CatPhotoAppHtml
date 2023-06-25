@@ -16,11 +16,7 @@
 		0 - Daily
 		1 - Criar um CRUD - Primeiro projeto
 		2 - Exercícios 
-		3 - Upload
+		3 - Upload (Upload app to github)
 		4 - Next class - Daily
 
-Videos:
-	Curso em Vid - Conditions Part 2: https://www.youtube.com/watch?v=EEStcIe8rAM&t=1548s
-	Curso em Vid - Looping Part 1: https://www.youtube.com/watch?v=5rZqYPKIwkY
-	Curso em Vid - Looping Part 2: https://www.youtube.com/watch?v=eX-lkN_Zahc
 	
