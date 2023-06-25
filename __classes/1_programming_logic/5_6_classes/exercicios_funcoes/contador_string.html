@@ -7,23 +7,25 @@
     <title>Functions</title>
 </head>
 <body>
+    <!-- Exercício 2: Contar quantas vezes uma letra aparece em uma string (Usar IF, FOR e FUNCTION) -->
     <script>
-        function countLetterOccurrences(text, letter) {
-        var count = 0;
+        function contar_char(texto, letra) {
+            let count = 0
 
-        for (var i = 0; i < text.length; i++) {
-            if (text[i].toLowerCase() === letter.toLowerCase()) {
-            count++;
+            // Verifica quantas vezes uma letra aparece em um texto
+            for (let i = 0; i < texto.length; i++) {
+                if (texto[i].toLowerCase() === letra.toLowerCase()) {
+                    count++
+                }
             }
+
+            return count
         }
 
-        return count;
-        }
-
-        var text = prompt("Digite um texto:");
-        var letter = prompt("Digite uma letra:");
-        var occurrences = countLetterOccurrences(text, letter);
-        console.log("A letra " + letter + " ocorre " + occurrences + " vezes no texto.");
+        let texto = prompt("Digite um texto:")
+        let letra = prompt("Digite uma letra:")
+        let resultado = contar_char(texto, letra)
+        alert("A letra " + letra + " ocorre " + resultado + " vezes no texto.")
     </script>
 </body>
 </html>

@@ -2,10 +2,11 @@
 <html>
     
 <head>
-    <title>APP</title>
+    <title>APP - Task Manager</title>
 
     <!-- Código em CSS -->
     <style>
+        /* Editar corpo do site  */
         body {
             background-color: black;
             color: skyblue;
@@ -15,7 +16,8 @@
             height: 100vh;
             margin: 0;
         }
-
+        
+        /* Editar botões do site  */
         button {
             background-color: skyblue;
             color: black;
@@ -24,7 +26,19 @@
             margin: 5px;
             font-size: large;
         }
-
+        
+        /* Editar botões do site quando o mouse estiver por cima  */
+        button:hover {
+            background-color: white;
+            color: black;
+            padding:.5rem 2rem;
+            border: none;
+            margin: 5px;
+            font-size: large;
+            scale: 1.1; 
+        }
+        
+        /* Editar campo de input do site  */
         input {
             background-color: white;
             color: black;
@@ -42,7 +56,7 @@
 <body>
     <!-- Botões para a aplicação  -->
     <div class="button-container">
-        <h1><i class="fa fa-server" aria-hidden="true"></i> Administrador de tarefas:</h1>
+        <h1><i class="fa fa-server" aria-hidden="true"></i> Administrador de tarefas</h1>
         <input type="text" id="input_tarefa">
         <button id="botao_criar">CREATE</button>
         <button id="botao_ler">DISPLAY</button>
@@ -51,8 +65,9 @@
         <button onclick="location.reload()">RESTART</button>
     </div>
 
-    <!-- Código JS para o APP -->
+    <!-- Código JavaScript para o aplic -->
     <script>
+        // Lista de tarefas para a aplicação
         let taferas_lista = []
 
         // Conectar funções com os botões acima
@@ -61,38 +76,41 @@
         document.getElementById('botao_atualizar').addEventListener('click', atualizar_tarefa)
         document.getElementById('botao_deletar').addEventListener('click', deletar_terefa)
 
+        // Função para criar uma tarefa nova
         function criar_tarefa() {
-            // Função para criar uma tarefa nova
-
-            let task = document.getElementById('input_tarefa').value
-            if (task) {
-                taferas_lista.push(task)
-                alert('Nova tarefa adicionada: ' + task)
+            let tarefa_nova = document.getElementById('input_tarefa').value
+            // Verifica se existe valor na variável
+            if (tarefa_nova) {
+                // Adiciona tarefa a lista
+                taferas_lista.push(tarefa_nova)
+                alert('Nova tarefa adicionada: ' + tarefa_nova)
             }
         }
 
+        // Função para mostrar todas as tarefas
         function mostrar_tarefa() {
-            // Função para mostrar todas as tarefas
-            
+            // Verifica se existem tarefas
             if (taferas_lista.length === 0) {
                 alert('Não há tarefas disponíveis.')
             } else {
-                let tarefas_armazenadas = 'Tarefas:\n'
+                let tarefas_armazenadas = 'Lista de tarefas armazenadas:\n'
+                // Armazena todas as tarefas em tarefas_armazenadas 
                 for (let i = 0; i < taferas_lista.length; i++) {
-                    tarefas_armazenadas += i + ':   ' + taferas_lista[i] + '\n'
+                    tarefas_armazenadas += 'Tarefa ' + i + ':   ' + taferas_lista[i] + '\n'
                 }
                 alert(tarefas_armazenadas)
             }
         }
         
+        // Função para atualizar tarefa via índice
         function atualizar_tarefa() {
-            // Função para atualizar tarefa via índice
-            
-            let indice = prompt('Entre com o índice da tarefa:')
-            if (indice >= 0 && indice < taferas_lista.length) {
+            let posicao = prompt('Entre com o índice da tarefa:')
+            // Valida posição
+            if (posicao >= 0 && posicao < taferas_lista.length) {
                 let tarefa_atualizada = prompt('Informe a nova tarefa:')
                 if (tarefa_atualizada) {
-                    taferas_lista[indice] = tarefa_atualizada
+                    // Sobrescrever valor na posição selecionada
+                    taferas_lista[posicao] = tarefa_atualizada
                     alert('Tarefa atualizada para ' + tarefa_atualizada + 'com sucesso!')
                 }
             } else {
@@ -100,12 +118,13 @@
             }
         }
         
+        // Função para deletar tarefa via índice
         function deletar_terefa() {
-            // Função para deletar tarefa via índice
-
-            let indice = prompt('Entre com o índice da tarefa:')
-            if (indice >= 0 && indice < taferas_lista.length) {
-                taferas_lista.splice(indice, 1)
+            let posicao = prompt('Entre com o índice da tarefa:')
+            // Valida posição
+            if (posicao >= 0 && posicao < taferas_lista.length) {
+                // Deleta tarefa
+                taferas_lista.splice(posicao, 1)
                 alert('Tarefa deletada com sucesso!')
             } else {
                 alert('Índice inválido!')

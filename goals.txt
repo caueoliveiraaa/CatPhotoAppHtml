@@ -1,12 +1,3 @@
-- rename everything and use pattern
-- create python exercises resolutions/examples for logic
-- Finish crud and add comments to it
-- finish exercises class 5 and 6
-
-
-- finish class 3 and 4
-- finish class 5 and 6
-- finish exercises 3 and 4
-- finish exercises 5 and 6
+- get class notes on site
 - finish all classes db
 - finish all classes db

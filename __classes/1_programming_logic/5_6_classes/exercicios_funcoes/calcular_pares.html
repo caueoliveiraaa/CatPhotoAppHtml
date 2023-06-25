@@ -6,24 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Functions</title>
 </head>
+
 <body>
+    <!-- Exercício 3: Calcular a soma dos números pares em um intervalo (Usar IF, WHILE e FUNCTION) -->
     <script>
-        function sumEvenNumbers(start, end) {
-        var sum = 0;
+        function soma_numeros_pares(num_ini, num_fin) {
+            let sum = 0
 
-        for (var i = start; i <= end; i++) {
-            if (i % 2 === 0) {
-            sum += i;
+            let contador = num_ini
+            while (contador <= num_fin) {
+                if ((contador % 2) === 0) {
+                    console.log('Somando: ' + sum + ' + ' + contador)
+                    sum += contador
+                }
+                contador++
             }
+
+            return sum
         }
 
-        return sum;
-        }
-
-        var startNum = parseInt(prompt("Digite o número inicial do intervalo:"));
-        var endNum = parseInt(prompt("Digite o número final do intervalo:"));
-        var result = sumEvenNumbers(startNum, endNum);
-        console.log("A soma dos números pares no intervalo é: " + result);
+        let num_ini = parseInt(prompt('Digite o número inicial do intervalo:'))
+        let num_fin = parseInt(prompt('Digite o número final do intervalo:'))
+        let result = soma_numeros_pares(num_ini, num_fin)
+        console.log('A soma dos números pares no intervalo é: ' + result)
     </script>
 </body>
 </html>

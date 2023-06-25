@@ -7,26 +7,31 @@
     <title>Functions</title>
 </head>
 <body>
+    <!-- Exercício 1 - Verificar se um número é primo (Usar IF, FOR e FUNCTION) -->
     <script>
-        function isPrime(number) {
-        if (number < 2) {
-            return false;
-        }
-
-        for (var i = 2; i < number; i++) {
-            if (number % i === 0) {
-            return false;
+        function eh_primo(number) {
+            // Números menores que 2 não são primos
+            if (number < 2) {
+                return false
             }
+            
+            // Número não pode ser divisível entre o intervalo de 2 e number
+            // Caso seja, o número não é primo
+            for (let indice = 2; indice < number; indice++) {
+                if (number % indice === 0) {
+                    return false
+                }
+            }
+
+            return true
         }
 
-        return true;
-        }
-
-        var num = prompt("Digite um número:");
-        if (isPrime(num)) {
-        console.log(num + " é primo.");
+        let num = prompt('Digite um número:')
+        // Verifica se é primo com função
+        if (eh_primo(num)) {
+            alert('Número ' + num + ' é primo.')
         } else {
-        console.log(num + " não é primo.");
+            alert('Número ' + num + ' não é primo.')
         }
     </script>
 </body>
