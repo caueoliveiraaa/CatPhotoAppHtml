@@ -1,5 +1,9 @@
 <CHAPTERS - 1/6>
 
+download link:
+https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?redirectedfrom=MSDN&view=sql-server-ver16
+https://sqlitebrowser.org/
+
 # CLASS 1:
 	Structure:
 		0 - Daily
