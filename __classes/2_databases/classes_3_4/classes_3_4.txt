@@ -24,7 +24,3 @@
 		5 - Exercícios
 		6 - Upload
 		7 - Nex Class - Daily
-
-Videos:
-	for next class - Hasgtag loops: https://www.youtube.com/watch?v=m4XgtArpc-8
-	               - Break - Continue: https://www.youtube.com/watch?v=BMQ3lM-GVu8
