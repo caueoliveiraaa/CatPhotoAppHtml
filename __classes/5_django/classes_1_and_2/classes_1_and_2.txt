@@ -1,0 +1,14 @@
+CLASS 01:
+    Compreendendo o uso do framework, histórico, empresas que utilizam e o que pode ser feito.
+    Foque em ensinar a importação dos módulos principais, criar templates e arquivos estáticos.
+
+    Os tópicos que devem ter ênfase nessa aula são:
+        Conceitos do framework
+        Preparando o ambiente
+        Templates
+        Arquivos estáticos
+        Enviando e recebendo dados do front e do back
+
+CLASS 02:
+    Criar conexão entre o Django e o banco de dados.
+    Trabalhe com rotas, crie uma API e teste no Postman.

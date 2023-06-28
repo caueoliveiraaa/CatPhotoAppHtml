@@ -1,0 +1,9 @@
+CLASS 03:
+    Faça um exercício em conjunto com a turma criando um projeto mais complexo utilizando API.
+    Para essas últimas aulas, usar um modelo CRUD com API
+
+CLASS 04:
+    Crie o front-end para interagir com a API criada na última aula.
+
+CLASS 05:
+    Revisar algum conceito que a turma não compreendeu, passar algum desafio ou explicar mais funcionalidades do Django.

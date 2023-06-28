@@ -2,39 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conversão</title>
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
     <script>
-        // O usuário informa uma temperatura, em seguida poderá selecionar
-        // o tipo de conversão (Celsius e Fahrenheit).
-        // Fórmula para Celsius temperatura - 32) * (5 / 9
-        // Fórmula para Fahrenheit: temperatura * (9 / 5) + 32
+        // a - O usuário informa uma temperatura, em seguida poderá selecionar o tipo de
+        // conversão (Celsius e Fahrenheit).
+           
+        let resultado = 0.0
+        let tipo_conversao = 'inicio'
+        let mensagem_prompt = 'Informe o tipo de conversão (fahrenheit || celsius)'
+        mensagem_prompt += '\nOu informe qualquer outro valor para parar o programa:'
 
-        // Ler dados
-        let temperatura = parseInt(prompt('Informe a temperatura: '))
-        let tipo_conversao = prompt('Informe o tipo de conversão: ')
+        // Rodar o programa em loop infinito
+        // até parar o mesmo manualmente
+        while (true) {
+            // Ler os valores
+            let temperatura = parseFloat(prompt('Informe a temperatura: '))
+            let tipo_conversao = prompt(mensagem_prompt)
 
-        // Realizar conversão
-        let resultado;
-        if (tipo_conversao === 'Celsius') {
-            resultado = (temperatura - 32) * (5 / 9)
-            resultado = resultado.toFixed(2)
-
-        } else if (tipo_conversao === 'Fahrenheit') {
-            resultado = temperatura * (9 / 5) + 32
-            resultado = resultado.toFixed(2)
-
-        } else {
-            console.error('Tipo de conversão inválido.')
-            
+            tipo_conversao = tipo_conversao.toLowerCase() // Sem letras maiusculas
+    
+            // Se a conversão for celsius
+            if (tipo_conversao == 'celsius') {
+                resultado = (temperatura - 32) * (5 / 9)
+                resultado = resultado.toFixed(2)
+                // Mostrar a variavel com resultado da conversão
+                alert('O resultado da conversão é ' + resultado + ' graus ' + tipo_conversao + '.')
+            // Se a conversão for fahrenheit
+            } else if (tipo_conversao == 'fahrenheit') {
+                resultado = (temperatura * 9) / (5 + 32)
+                resultado = resultado.toFixed(2)
+                // Mostrar a variavel com resultado da conversão
+                alert('O resultado da conversão é ' + resultado + ' graus ' + tipo_conversao + '.')
+            } else {
+                alert('Informe uma opção válida (fahrenheit || celsius)!')
+            }
         }
-        
-        console.log('O resultado da conversão é ' + resultado + ' graus ' + tipo_conversao + '.')
     </script>
 </body>
 </html>
-
-

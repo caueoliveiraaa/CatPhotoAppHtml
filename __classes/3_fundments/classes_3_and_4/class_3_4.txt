@@ -16,7 +16,3 @@
         1 - CRUD Flask
         2 - Upload
 		3 - Next class - Daily
-
-Videos:
-    for next class - Código Fonte oop: https://www.youtube.com/watch?v=QY0Kdg83orY
-                   - Hashtag oop 50 min: https://www.youtube.com/watch?v=gomDSZaay3E

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de programação</title>
+</head>
+<body>
+    <script>
+        // b - Implemente uma matriz 3x2, na primeira coluna serão armazenados nomes de
+        // cursos, já na segunda coluna os valores. O cliente irá informar três cursos e três
+        // valores, em seguida exiba todos os cursos e valores.
+                
+        // Criando a matriz 3x2
+        let matriz = []
+
+        // Solicitando ao cliente os cursos e valores
+        for (let i = 0; i < 3; i++) {
+            let curso = prompt('Informe o nome do curso ' + (i + 1) + ':')
+            let valor = parseFloat(prompt('Informe o valor do curso ' + (i + 1) + ':'))
+
+            // Adicionando os dados à matriz
+            matriz.push([curso, valor])
+        }
+
+        // Exibindo todos os cursos e valores
+        for (let i = 0; i < matriz.length; i++) {
+            console.log('Curso: ' + matriz[i][0] + ', Valor: ' + matriz[i][1])
+        }
+    </script>
+</body>
+</html>

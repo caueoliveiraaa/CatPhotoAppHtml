@@ -12,7 +12,7 @@
         // quantidade mínima nem máxima. Quando informada a palavra sair, exiba todos os
         // nomes e informe a quantidade de nomes cadastrados.
 
-        // Array para armazenar os nomes
+        // Array/Lista para armazenar os nomes
         let nomes = []
 
         // Loop para solicitar os nomes (loop infinito)
@@ -21,6 +21,8 @@
         
             // Verificar se o usuário digitou 'sair'
             if (nome.toLowerCase() === 'sair') {
+                // Usar a palavra reservada do JavaScript
+                // para quebrar o laço de repetição
                 break
             }
         
@@ -34,7 +36,7 @@
             console.log(nomes[i])
         }
 
-        // Exibir a quantidade de nomes cadastrados
+        // Exibir a quantidade de nomes cadastrados usando o .length
         console.log('Quantidade de nomes cadastrados: ' + nomes.length)
     </script>
 </body>

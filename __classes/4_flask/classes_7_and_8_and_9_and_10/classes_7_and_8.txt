@@ -1,0 +1,8 @@
+CLASS 07:
+    Essa aula o instrutor poderá rever algum conteúdo, passar algum desafio ou ensinar algum conteúdo extra sobre o Flask.
+
+CLASS 08:
+    Nessa oitava aula do curso, o aluno terá que iniciar o desenvolvimento do projeto final.
+    A ideia do projeto é ele adicionar no GitHub e ter como comprovar seus conhecimentos.
+    Auxilie a escolher o tema e iniciar o projeto, eles podem escolher entre Python puro, Django ou Flask.
+    Não esquecer que os alunos têm direito a uma mentoria de 12 horas após o curso com o coordenador pedagógico da Apex.
