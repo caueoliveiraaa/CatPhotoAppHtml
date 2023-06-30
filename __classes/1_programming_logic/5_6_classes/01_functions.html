@@ -9,70 +9,120 @@
 <body>
     <script>
         // Função para calcular o produto de p1 e p2
-        function minha_funcao(p1, p2) {
+        function somar_numeros(p1, p2) {
             return p1 * p2
         }
                 
-        // Mostrar resultado de minhaFuncao
-        console.log(minha_funcao())
+        // Mostrar resultado
+        console.log(somar_numeros())
 
 
         // Função usando while loop
         function contar_ate_dez() {
             var contador = 1
-
+            
+            // usar <= para incluir número 10
             while (contador <= 10) {
                 console.log(contador)
+
+                // Incrementar contador do laço
                 contador++
             }
         }
 
         // Chamando função
+        // Chamar uma função é o mesmo que utilizá-la no seu código
         contar_ate_dez()
 
 
-        // Função usando if-else-if
-        function verificar_dai_semana(dia) {
-            if (dia === 'segunda') {
-                console.log('É segunda-feira!')
-            } else if (dia === 'terca') {
-                console.log('É terça-feira!')
-            } else if (dia === 'quarta') {
-                console.log('É quarta-feira!')
-            } else if (dia === 'quinta') {
-                console.log('É quinta-feira!')
-            } else if (dia === 'sexta') {
-                console.log('É sexta-feira!')
-            } else if (dia === 'sabado') {
-                console.log('É sábado!')
-            } else if (dia === 'domingo') {
-                console.log('É domingo!')
+
+
+
+
+
+
+
+        // Função usando if && else if passando o prompt por parâmetro
+        function verificar_dai_semana(prompt_input) {
+            // Chamar a funçao para verificar o número
+            if (typeof prompt_input === 'number') {
+
+                // Retornar o dia da semana
+                if (prompt_input === 2) {
+                    return 'É segunda-feira!'
+                } else if (prompt_input === 3) {
+                    return 'É terça-feira!'
+                } else if (prompt_input === 4) {
+                    return 'É quarta-feira!'
+                } else if (prompt_input === 5) {
+                    return 'É quinta-feira!'
+                } else if (prompt_input === 6) {
+                    return 'É sexta-feira!'
+                } else if (prompt_input === 7) {
+                    return 'É sábado!'
+                } else if (prompt_input === 1) {
+                    return 'É domingo!'
+                } else {
+                    return 'Dia inválido!'
+                }
+            } 
+        }
+
+
+        // Ler o dia da semana usando um laço de repetição infinito 
+        let msg_prompt = 'Informe o numero para a função verificar_dai_semana (s para sair):'
+        while (true) {
+            let prompt_input = prompt(msg_prompt)
+
+            if (prompt_input === 's') {
+                break
             } else {
-                console.log('Dia inválido!')
+                verificar_dia_semana(prompt_input)
             }
         }
 
-        let dia = prompt('Informe o dia para a função verificar_dai_semana:')
-        verificar_dai_semana(dia)
+        
 
 
-        // Função usando for loop
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        // Função usando for loop passando as notas como parâmetro
         function calcular_media_notas(notas) {
-            var soma = 0
+            let soma = 0
 
-            for (var i = 0; i < notas.length; i++) {
+            // Percorrer todas as notas na lista e adicioná-las a variável soma
+            for (let i = 0; i < notas.length; i++) {
                 soma += notas[i]
             }
 
-            var media = soma / notas.length
+            // Cálcular média
+            let media = soma / notas.length
+
+            // Usar a palavra reservada 'return' para retornar algum tipo de dado
+            // Neste caso, o resultado do cálculo que verifica a média do aluno
             return media
         }
 
-        // Exemplo de uso da função
-        var notas_dos_alunos = [7.5, 8.2, 6.8, 9.0, 7.3]
-        var media_das_notas = calcular_media_notas(notas_dos_alunos)
+        // Criar uma lista com as notas
+        let notas_dos_alunos = [7.5, 8.2, 6.8, 9.0, 7.3]
 
-        console.log("A média das notas dos alunos é: " + media_das_notas)
+        // Chamar a função para o cálculo
+        let media_das_notas = calcular_media_notas(notas_dos_alunos)
+
+        // Mostrar resultado da nota que foi retornado da função
+        alert("A média das notas dos alunos é: " + media_das_notas)
        
     </script>
 </body>

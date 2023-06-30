@@ -11,67 +11,29 @@
         // Crie um sistema de votação para três candidatos. O eleitor poderá selecionar um dos três nomes,
         // em seguida será contabilizado o voto para o candidato.
 
-        // Usando IF:
-        
         let candidatoA = 0
         let candidatoB = 0
         let candidatoC = 0
+        let candidato = 0
 
-        let candidato = prompt('Informe o candidato (A, B ou C): ')
+        while (candidato != 4) {
+            candidato = prompt('Informe o candidato (A, B ou C) informe 4 para sair: ')
 
-        if (candidato === 'A') {
-            candidatoA++;
-        } else if (candidato === 'B') {
-            candidatoB++;
-        } else if (candidato === 'C') {
-            candidatoC++;
-        } else {
-            console.log('Candidato inválido.')
+            if (candidato === 'A') {
+                candidatoA++;
+            } else if (candidato === 'B') {
+                candidatoB++;
+            } else if (candidato === 'C') {
+                candidatoC++;
+            } else if (candidato != '4') {
+                alert('Candidato inválido.')
+            }
+
         }
 
-        console.log('Candidato A: ' + candidatoA + ' votos')
-        console.log('Candidato B: ' + candidatoB + ' votos')
-        console.log('Candidato C: ' + candidatoC + ' votos')
-
-
-
-
-        // Usando Switch:
-
-        let candidato1 = 0
-        let candidato2 = 0
-        let candidato3 = 0
-
-        // -> Não usamos o LET aqui pois a variável já foi declarada/criada
-        candidato = prompt('Informe o candidato (A, B ou C): ')
-        candidato = candidato.toLowerCase() // Não deixar valores com letras maiúsculas
-
-        switch (candidato) {
-            case 'a':
-                console.log('Voto registrado para o Candidato 1.')
-                candidato1++
-                break
-
-            case 'b':
-                console.log('Voto registrado para o Candidato 2.')
-                candidato2++
-                break
-
-            case 'c':
-                console.log('Voto registrado para o Candidato 3.')
-                candidato3++
-                break
-
-            default:
-                console.log('Candidato inválido. Voto não registrado.')
-                break
-        }
-
-        // Exibindo os resultados dos votos
-        console.log('Resultados dos votos:');
-        console.log('Candidato 1: ' + candidato1 + ' voto(s)')
-        console.log('Candidato 2: ' + candidato2 + ' voto(s)')
-        console.log('Candidato 3: ' + candidato3 + ' voto(s)')
+        alert('Candidato A: ' + candidatoA + ' votos')
+        alert('Candidato B: ' + candidatoB + ' votos')
+        alert('Candidato C: ' + candidatoC + ' votos')
     </script>
 </body>
 </html>

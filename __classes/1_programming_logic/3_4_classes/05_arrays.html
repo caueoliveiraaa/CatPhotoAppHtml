@@ -2,113 +2,68 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arrays/Listas</title>
+    <title>Document</title>
 </head>
 <body>
     <script>
-        let lista_vazia_1  // Permitido em JS - (Em Python é necessário = '' ou = 0 ou = [], etc)
-        let lista_vazia_2 = []
+        // Trabalhando com listas
+        let lista_de_dados = ['Banana', 'Maça', 'Abacaxi', 'Uva', 'Pêra']
+                                // 0       //1     //2        //3    // 4
 
-        // Declarando variável para lista/array
-        let lista_frutas = ['Banana', 'Laranja', 'Maça', 'Manga']
+        // Buscando o tamanho da lista (lenght == quantidade)
+        let quantidade = lista_de_dados.length
+        alert('Quantidade de itens na lista = ' + quantidade)
 
-        // Visualmente mais claro (Sobrescrevendo com os mesmosvalores)
-        lista_frutas = [  
-            'Banana',
-            'Laranja',
-            'Maça',
-            'Manga'
-        ]
-
-        // função .lenght retorna o tamanho da lista, ou seja
-        // quantos item existem no array. (lenght significa tamanho)
-        let tamanho_frutas = lista_frutas.length
-        
-        // Métodos/Funções para arrays
-        let lista_numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-        console.log('\nLista de números: ' + lista_numeros)
-        
-        // Retorna último item
-        let ultimo_numero = lista_numeros.pop()  
-        console.log('Removeu último item: ' + ultimo_numero + ' de lista_numeros')
-        console.log('\nLista de números: ' + lista_numeros)
-        
-        // Adiciona item no final
-        lista_numeros.push(100)  
-        console.log('\nLista de números: ' + lista_numeros)
-        
-        
-        // Índice dos(as) arrays/listas
-        let lista_frutas_2 = ['Banana', 'Laranja', 'Maça', 'Manga', 'Melância']
-
-        console.log('\nArray lista_frutas_2: ')
-        for (let i = 0; i < lista_frutas_2.length; i++) {
-            console.log(lista_frutas_2[i])
-        }
-        
-        // Substituindo valor com índice
-        lista_frutas_2[0] = 'Mexirica' 
-        
-        console.log('\nArray lista_frutas_2 após sobrescrever: ')
-        for (let i = 0; i < lista_frutas_2.length; i++) {
-            console.log(lista_frutas_2[i])
+        // Mostrar todos os itens da lista
+        for (let i = 0; i < lista_de_dados.length; i++) {
+            alert(i + ' item = ' + lista_de_dados[i])
         }
 
-        // Substituindo outro valor
-        lista_frutas_2[2] = 'Abacaxi' 
+        // Subistituir um valor na lista
+        lista_de_dados[1] = 'Jabuticaba'
+        alert(lista_de_dados)
 
-        console.log('\nArray lista_frutas_2 com Abacaxi: ')
-        for (let i = 0; i < lista_frutas_2.length; i++) {
-            console.log(lista_frutas_2[i])
-        }
-        
-        // Manipulando lista/array
-        let validou = 0
-        let achou = false
-        let numeros_aleatorios = [
-            1, 16, 94, 3, 169,
-            165, 16, 146, 5,
-            49, 215, 1561, 9,
-            15, 145, 5, 94,
-        ]
-        
-        // Printando maior número com for dentro de for com break
-        for (let i = 0; i < numeros_aleatorios.length; i++) {
-            console.log('Verificando se ' + numeros_aleatorios[i] + ' é o maior número')
+        // Loop for para verificar quais numeros de 1 a 20
+        // sao impares ou pares
+        let lista_de_numeros = [141, 156, 315, 461, 15, 516, 317, 813, 1519, 1510]
+        let soma_impares = 0
+        let soma_pares = 0
 
-            for (let j = 0; j < numeros_aleatorios.length; j++) {
-                // Validar se número na posição i é maior que todos os na posição j
-                if (numeros_aleatorios[i] >= numeros_aleatorios[j]) {
-                    validou = (validou + 1)
-                }
-                
-                if (validou == numeros_aleatorios.length) {
-                    console.log('Maior número da lista: ' + numeros_aleatorios[i])
-                    achou = true
-                    break
-                } 
+        for (let i = 0; i < lista_de_numeros.length; i++) { 
+            if (lista_de_numeros[i] % 2 == 0) {
+                soma_pares++
+                alert(lista_de_numeros[i] + ' numero eh par!')
+            } else {
+                soma_impares++
+                alert(lista_de_numeros[i] + ' numero eh impar!')
             }
-            
-            // Parar se achou número, senão reiniciar a contagem
-            if (achou == true) {
+        }
+
+        alert('Quantidade de pares ' + soma_pares)
+        alert('Quantidade de impares ' + soma_impares)
+
+
+        // Percorrer lista ate achar impar
+        let lista_numeros = [4, 6, 16, 24, 15, 28]
+
+        for (let i = 0; i < lista_numeros.length; i++) {
+            // Verificar se eh impar
+            if (lista_numeros[i] % 2 != 0) {
+                alert(lista_numeros[i] + ' eh impar')
                 break
             } else {
-                validou = 0
+                alert(lista_numeros[i] + ' nao eh impar')
             }
         }
-       
-        // Loop inverso
-        console.log('\nInversão:')
-        let array_contrario = [1, 2, 3, 4, 5]
-        let tamanho_list = array_contrario.length
+        
+        // Inversao (loop invertido) com lista dinamica
+        let lista = [1, 2, 3, 4, 'python', 'javascript', true, 7, false, 25.0]
 
-        for (let i = tamanho_list; i >= 0; i--) {
-            console.log(array_contrario[i])
+        for (let i = 9; i >= 0; i--) {
+            alert('O item ' + lista[i] + ' esta na posicao ' + i + ' e eh do tipo ' + typeof lista[i])
         }
+
     </script>
 </body>
 </html>
-
-

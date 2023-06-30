@@ -7,25 +7,31 @@
 </head>
 <body>
     <script>
-        // b - Implemente uma matriz 3x2, na primeira coluna serão armazenados nomes de
-        // cursos, já na segunda coluna os valores. O cliente irá informar três cursos e três
+        // b - Implemente uma matriz 3x2, na primeira coluna serão
+        // armazenados nomes de
+        // cursos, já na segunda coluna os valores.
+        // O cliente irá informar três cursos e três
         // valores, em seguida exiba todos os cursos e valores.
-                
-        // Criando a matriz 3x2
-        let matriz = []
+        
+        // Lista para armazenar dados
+        let matriz = [] 
 
-        // Solicitando ao cliente os cursos e valores
+        // for loop para armazenar os valores dentro da matriz
         for (let i = 0; i < 3; i++) {
-            let curso = prompt('Informe o nome do curso ' + (i + 1) + ':')
-            let valor = parseFloat(prompt('Informe o valor do curso ' + (i + 1) + ':'))
+            // Pedir dados ao usuario
+            let curso = prompt('Informe o curso') 
+            let valor = prompt('Informe o valor para o curso')
 
-            // Adicionando os dados à matriz
-            matriz.push([curso, valor])
+            // Criar sublista
+            let sublista = [curso, valor]
+
+            // Adiconar sublista dentro da lista
+            matriz.push(sublista)
         }
 
-        // Exibindo todos os cursos e valores
-        for (let i = 0; i < matriz.length; i++) {
-            console.log('Curso: ' + matriz[i][0] + ', Valor: ' + matriz[i][1])
+        // Mostrar todos os itens
+        for (let i = 0; i < matriz.lenght; i++) {
+            alert('Curso ' + matriz[i][0] + ' - Valor ' + matriz[i][1])
         }
     </script>
 </body>
