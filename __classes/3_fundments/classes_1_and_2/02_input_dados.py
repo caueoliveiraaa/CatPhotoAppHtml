@@ -2,6 +2,7 @@
 # A biblioteca os consegue executar
 # comandos no CMD 
 import os
+import pyautogui as p
 
 
 # Comandos para CMD:
@@ -37,6 +38,24 @@ def main():
         print('testando python')
         os.system('python --version')
 
+        # Usando input do Python
+        texto_input = input('Informe o texto: ')
+        print(texto_input)
+
+        # Usando prompt do pyautogui
+        texto_prompt = p.prompt(
+            text='Digite qualquer texto que você desejar!',
+            title='Input texto' ,
+            default=''
+        )
+
+        # Usando o alert do pyautogui
+        p.alert(f'O texto informado foi:\n{texto_prompt}')
+        
+        # NOTE: Em Python podemos acessar o conteúdo
+        # de uma variável dentro da string
+        # usando o f antes da string e 
+        # usando {variavel} 
     except Exception as e:
         # Mostrar o erro caso
         # o mesmo ocorra

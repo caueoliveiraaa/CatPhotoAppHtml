@@ -24,8 +24,8 @@ def ler_dados():
 
 def main(input_texto):
     """
-        Este bot abre o notepad
-        e escreve manipulando
+        Abrir o notepad,
+        e escrever manipulando
         o teclado com pyautogui
 
     """

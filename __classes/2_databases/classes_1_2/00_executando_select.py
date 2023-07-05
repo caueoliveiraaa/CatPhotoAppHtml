@@ -10,10 +10,10 @@ with open('your_sql_file.sql', 'r') as file:
     sql_query = file.read()
 
 # Executar sql com pandas
-result = pd.read_sql_query(sql_query, conn)
+resultado = pd.read_sql_query(sql_query, conn)
 
 # Mostrando resultado
-print(result)
+print(resultado)
 
 # Fechando conexão
 conn.close()
