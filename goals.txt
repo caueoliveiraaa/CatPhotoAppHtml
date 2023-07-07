@@ -1,3 +1,4 @@
+- get extra exercises
 - get class notes from site
 - finish all classes db
 - finish all classes db

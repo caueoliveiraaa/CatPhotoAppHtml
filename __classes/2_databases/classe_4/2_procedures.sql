@@ -1,0 +1,4 @@
+-- Agora, quanto às "procedures" (procedimentos), elas são blocos
+-- de código SQL nomeados e armazenados no banco de dados.
+-- As procedures são usadas para agrupar uma série de instruções SQL
+-- em uma única unidade lógica, que pode ser chamada e executada repetidamente.
