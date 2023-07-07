@@ -30,5 +30,3 @@ https://sqlitebrowser.org/
 		1 - Terminar Exercícios
 		2 - Upload
 		3 - Nex Class - Daily
-
-Videos:

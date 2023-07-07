@@ -6,6 +6,12 @@ import sqlite3
 # imagens, criando sites, etc... sem precisar escrever
 # todo o código do zero e usando funções e classes
 # da biblioteca para criar programas, scripts, etc. 
+import os
+# Importando biblioteca os para manipular
+# o sistema operacional via terminal
+
+# Usando o comando cls no terminal
+os.system('cls')
 
 # Conectar com base de dados mydatabase.db
 conexao = sqlite3.connect('mydatabase.db')
@@ -25,7 +31,7 @@ while True:
         print(f'Nome {nome_tabela} para tabela é válido.')
         break
     else:
-        print('Infome um nome válido!')
+        print('Infome um nome válido para a tabela!')
 
 # Criar uma tabela usando python com sqlite
 # O f antes da string permite que sejam inseridas
