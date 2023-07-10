@@ -32,20 +32,24 @@
     14.Deletar todos os usuários com idade inferior a 18 anos
     15.Excluir todos os dados da tabela e reiniciar a contabilização
     16.Refazer o processo com os seus próprios nomes, tabelas, dados, mas sem excluir no final. 
-    17.Criar um CRUD completo com todos os comandos SQL aprendidos para o usuário usar,
-        como filtrar/selecionar/deletar dados,
-        ornedar dados, adicionar dados, criar tabelas, etc... 
-       - Usar Python e sqlite (pandas opicional), usar arquivos .sql
-        ou escrever o SQL dentro de (f''' string ''') em Python.
-       - Criar uma pasta chamada crud_banco e criar um arquivo
-        main.py e base_de_dados.db. (nomes opicionais)
-       - O arquivo .py irá manipular a base de dados para o usuário
-        sem o usuário se procupar com o SQL, que rodará no background.
-       - O programa em Python deve rodar encima de laços de repetições como while
-        e validando os dados e nomes das colunas, tabelas, etc... 
+
+# Revisão:
+    
+    17.Criar um CRUD completo com todos os comandos SQL aprendidos para o usuário usar através de opções no terminal,
+        como filtrar/selecionar/deletar dados, ornedar dados, adicionar dados, criar tabelas, etc... 
+       - Usar Python e sqlite (pandas opicional), usar arquivos .sql ou escrever o SQL dentro de (f''' string ''') em Python.
+       - Criar uma pasta chamada crud_banco e criar um arquivo main.py e base_de_dados.db (nomes opicionais)
+       - O arquivo .py irá manipular a base de dados para o usuário, sem o usuário se procupar com o SQL, que rodará no background.
+       - O programa em Python deve rodar encima de laços de repetições, como while, e validando os dados e nomes das colunas,
+         tabelas, etc... antes de inserir e alterar os mesmos! 
        - O usuário deve apenas informar a opção que ele quer, como:
-        1 - Calcular média da coluna idade
-        2 - Selecionar dados por nome da tabela
-        3 - Deletar linha por nome
-        4 - Deletar linha por id
-        5 - etc ...
+            1 - Calcular média da coluna idade
+            2 - Selecionar todos os dados da tabela por nome da tabela
+            3 - Deletar linha por nome
+            4 - Deletar linha por id
+            5 - Verificar se letra aparece no começo dos nomes na coluna nome
+            6 - Selecionar dados por nome da coluna
+            7 - Atualizar dados via nome da tabela e nome da coluna
+            8 - etc ...
+            
+        (Use a criatividade e revise o máximo possível!)
