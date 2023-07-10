@@ -3,9 +3,9 @@
 import sqlite3
 # Bibliotecas são códigos prontos para serem executados
 # realizando conexões com base de dados, trabalhando com
-# imagens, criando sites, etc... sem precisar escrever
+# imagens, criando apps, etc... sem precisar escrever
 # todo o código do zero e usando funções e classes
-# da biblioteca para criar programas, scripts, etc. 
+# das bibliotecas para criar programas, scripts, etc. 
 import os
 # Importando biblioteca os para manipular
 # o sistema operacional via terminal
@@ -27,7 +27,7 @@ while True:
     nome_tabela = input('Informe o nome da tabela: ') 
 
     # Verificar se o usuário informou um nome váido
-    if nome_tabela != '' and len(nome_tabela) > 5:
+    if nome_tabela != '' and len(nome_tabela) > 3:
         print(f'Nome {nome_tabela} para tabela é válido.')
         break
     else:

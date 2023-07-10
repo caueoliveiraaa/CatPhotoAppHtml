@@ -4,10 +4,10 @@
 
 -- PRIMARY KEY:
 -- Auto incrementa o valor que está no campo
--- Força o campo a não ter um valor null
+-- Força o campo a não poder ter um valor null
 -- Garante que cada usuário terá um valor único
 
--- IF NOT EXISTS: 
+-- IF NOT EXISTS:
 -- Garante que a tabela apenas será criada
 -- caso uma tabela com o nome usuarios não exista
 
@@ -15,23 +15,29 @@ CREATE TABLE IF NOT EXISTS usuarioss (
     -- Campo do tipo int com chave primária
     id INTEGER PRIMARY KEY,
     -- Text é usando para campos str
-    nome TEXT
-    -- Text é usando para campos do tipo int
+    nome TEXT,
+    -- INTEGER é usando para campos do tipo int
     idade INTEGER,
     -- A última coluna da tabela não precisa de vírgula 
     email TEXT
 );
 
-
-
 -- 2 - Inserindo dados em tabelas:
 
 -- INSERT INTO é o comando SQL para inserir dados em uma tabela
-INSERT INTO usuarioss (name, age, email)
+INSERT INTO usuarioss (nome, idade, email)
 -- Ele é seguido pelo VALUE que armazena os valores a serem armazenados
-VALUES ('John Doe', 30, 'john@example.com');
+VALUES ('John', 30, 'john@exemplo.com');
 
+-- Inserindo mais dados na tabela
+INSERT INTO usuarioss (nome, idade, email)
+VALUES ('Bruce', 36, 'bruce@exemplo.com');
 
+INSERT INTO usuarioss (nome, idade, email)
+VALUES ('Paul', 36, 'paul@exemplo.com');
+
+INSERT INTO usuarioss (nome, idade, email)
+VALUES ('Brock', 36, 'bro@exemplo.com');
 
 -- 3 - Alterando tabelas:
 
@@ -39,8 +45,6 @@ VALUES ('John Doe', 30, 'john@example.com');
 ALTER TABLE usuarioss
 -- RENAME TO renomeia a tabela
 RENAME TO usuarios;
-
-
 
 -- 4 - Resetando tabelas:
 
