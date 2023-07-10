@@ -22,5 +22,5 @@ FROM usuarios WHERE idade > 18;
 
 -- Selecionando a quantidade de usuários não adultos:
 
-SELECT COUNT(*) AS usuarios_adultos
+SELECT COUNT(*) AS usuarios_menores
 FROM usuarios WHERE idade < 18;
