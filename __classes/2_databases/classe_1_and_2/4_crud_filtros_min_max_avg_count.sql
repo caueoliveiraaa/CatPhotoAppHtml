@@ -24,3 +24,29 @@ FROM usuarios WHERE idade > 18;
 
 SELECT COUNT(*) AS usuarios_menores
 FROM usuarios WHERE idade < 18;
+
+-- Contar quantos usuários tem na tabela
+SELECT COUNT(*) FROM usuarios;
+
+-- Contar e-mails 
+SELECT COUNT(email) FROM usuarios;
+
+-- Calcular a média dos usuários que tem e-mail
+SELECT AVG(idade) FROM usuarios 
+WHERE email IS NOT NULL;
+
+-- Encontrar todos os usuários onde o nome começa com 'A'
+SELECT * FROM usuarios WHERE nome LIKE 'A%';
+
+-- Encontrar todos os usuários onde o nome termina com 'son'
+SELECT * FROM usuarios
+WHERE nome LIKE '%son';
+
+-- Encontrar todos os usuários que o e-mail possui a palavra 'gmail'
+-- em qualquer parte do e-mail
+SELECT * FROM usuarios WHERE email LIKE '%gmail%';
+
+-- Encontrar todos os usuários que o nome começa com 'A' e termina com 'son'
+SELECT * FROM usuarios WHERE nome LIKE 'A%son';
+
+
