@@ -8,13 +8,14 @@ cursor = conexao.cursor()
 
 # Mensagem para CRUD
 opcoes = '\nEscholha uma operação abaixo:'
-opcoes += '\n1 -Selecionar'
+opcoes += '\n1 - Selecionar'
 opcoes += '\n2 - Deletar'
 opcoes += '\n3 - Atualizar'
 opcoes += '\n4 - Inserir'
 opcoes += '\n5 - Sair'
-opcoes += '\n: '
+opcoes += '\nInforme a opção: '
 
+# While que rodará o programa
 while True:
     # Selecionar o tipo de operação
     operacao = input(opcoes) 
@@ -65,6 +66,7 @@ while True:
                 SET nome = '{nome_novo}', idade = {idade_nova}, email = '{email_novo}' 
                 WHERE id = {id_linha};
             ''')
+            
             print(f'Dados atualizados com sucesso em id = {id_linha}!')
         else:
             print('Informe dados válidos para serem inseridos!')
@@ -87,6 +89,7 @@ while True:
                 INSERT INTO usuarios (nome, idade, email)
                 VALUES ('{nome_novo}', {idade_nova}, '{email_novo}');
             ''')
+            
             print(f'Dados {nome_novo}, {idade_nova}, e {email_novo} inseridos com sucesso!')
         else:
             print('Informe dados válidos para serem inseridos!')
