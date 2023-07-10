@@ -1,7 +1,5 @@
 # Exercícios para pasta exercicios_classe_1_and_2:
-
-# Escrever código SQL em arquivos .sql e abrir os mesmos
-# usando Python e executando os exercícios via um arquivo python
+# usar o Python, executando os exercícios via um arquivo python
 # chamado de administrador_exercicio.py
 
     1.Criar uma base de dados chamada: ​exercicio
@@ -35,17 +33,17 @@
     15.Excluir todos os dados da tabela e reiniciar a contabilização
     16.Refazer o processo com os seus próprios nomes, tabelas, dados, mas sem excluir no final. 
     17.Criar um CRUD completo com todos os comandos SQL aprendidos para o usuário usar,
-        como filtrar dados, juntas tabelas, selecionar, deletar,
+        como filtrar/selecionar/deletar dados,
         ornedar dados, adicionar dados, criar tabelas, etc... 
-       .Usar Python e sqlite (pandas opicional), usar arquivos .sql
+       - Usar Python e sqlite (pandas opicional), usar arquivos .sql
         ou escrever o SQL dentro de (f''' string ''') em Python.
-       .Criar uma pasta chamada crud_banco e criar um arquivo
+       - Criar uma pasta chamada crud_banco e criar um arquivo
         main.py e base_de_dados.db. (nomes opicionais)
-       .O arquivo .py irá manipular a base de dados para o usuário
+       - O arquivo .py irá manipular a base de dados para o usuário
         sem o usuário se procupar com o SQL, que rodará no background.
-       .O programa em Python deve rodar encima de laços de repetições while
+       - O programa em Python deve rodar encima de laços de repetições como while
         e validando os dados e nomes das colunas, tabelas, etc... 
-       .O usuário deve apenas informar a opção que ele quer, como:
+       - O usuário deve apenas informar a opção que ele quer, como:
         1 - Calcular média da coluna idade
         2 - Selecionar dados por nome da tabela
         3 - Deletar linha por nome
