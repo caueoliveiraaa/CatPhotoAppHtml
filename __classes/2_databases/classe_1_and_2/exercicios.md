@@ -52,4 +52,4 @@
             7 - Atualizar dados via nome da tabela e nome da coluna
             8 - etc ...
             
-        (Use a criatividade e revise o máximo possível!)
+        (Use a criatividade para as opções, acima são apenas exemplos, e revise quantos comandos SQL nesse exercício for possível.)
