@@ -36,8 +36,10 @@
 # Revisão:
     
     17.Criar um CRUD completo com todos os comandos SQL aprendidos para o usuário usar através de opções no terminal,
-        como filtrar/selecionar/deletar dados, ornedar dados, adicionar dados, criar tabelas, etc... 
-       - Usar Python e sqlite (pandas opicional), usar arquivos .sql ou escrever o SQL dentro de (f''' string ''') em Python.
+      como filtrar/selecionar/deletar dados, ornedar dados, adicionar dados, criar tabelas, etc... 
+      O usuário deve apenas informar o número da opção, e o programa manipulará o banco de dados conforme a opção selecionada.
+      Informações importantes:
+       - Usar Python e sqlite (pandas opicional), usar arquivos .sql OU escrever o SQL dentro de (f''' string ''') em Python.
        - Criar uma pasta chamada crud_banco e criar um arquivo main.py e base_de_dados.db (nomes opicionais)
        - O arquivo .py irá manipular a base de dados para o usuário, sem o usuário se procupar com o SQL, que rodará no background.
        - O programa em Python deve rodar encima de laços de repetições, como while, e validando os dados e nomes das colunas,
