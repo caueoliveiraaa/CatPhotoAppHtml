@@ -22,6 +22,7 @@ while True:
 
     # Verificar a operação selecionada 
     if operacao == '1':
+        os.system('cls')
         cursor.execute(f'''
             SELECT * FROM usuarios 
         ''')
@@ -29,7 +30,6 @@ while True:
         # Atribuir resultado do SELECT a uma variável
         resultados = cursor.fetchall()
 
-        os.system('cls')
         # Mostrar resultado retornado do SQL
         for linha in resultados:
             print(linha)
@@ -38,18 +38,20 @@ while True:
         # Ler id da coluna a deletar
         id_linha = input('Informe o ID da coluna a deletar: ')             
         id_linha = int(id_linha)
+        os.system('cls')
 
         cursor.execute(f'''
             DELETE FROM usuarios 
             WHERE id = {id_linha};
         ''')
 
-        os.system('cls')
         print(f'Linha {id_linha} excluída com sucesso!')
     
     elif operacao == '3':
-        # Ler id da coluna a deletar
+        # Ler id da coluna a atualizar
         id_linha = input('Informe o ID da coluna a alterar: ')             
+        
+        os.system('cls')
         id_linha = int(id_linha)
 
         # Ler os dados novos
@@ -57,7 +59,6 @@ while True:
         email_novo = input('Informe o novo e-mail do usuário: ')             
         idade_nova = input('Informe a nova idade do usuário: ')             
         idade_nova = int(idade_nova)
-        os.system('cls')
 
         # Validar os dados e inserir os mesmos caso sejam válidos
         if len(nome_novo) > 3 and idade_nova > 0 and '@' in email_novo:
@@ -69,19 +70,16 @@ while True:
             
             print(f'Dados atualizados com sucesso em id = {id_linha}!')
         else:
-            print('Informe dados válidos para serem inseridos!')
+            print('Informe dados válidos para serem atualizados!')
 
     elif operacao == '4':
-        # Ler id da coluna a deletar
-        id_linha = input('Informe o ID da coluna a alterar: ')             
-        id_linha = int(id_linha)
-
         # Ler os dados novos
         nome_novo = input('Informe o nome do usuário: ')             
         email_novo = input('Informe o e-mail do usuário: ')             
         idade_nova = input('Informe a idade do usuário: ')             
-        idade_nova = int(idade_nova)
+        
         os.system('cls')
+        idade_nova = int(idade_nova)
 
         # Validar os dados e inserir os mesmos caso sejam válidos
         if len(nome_novo) > 3 and idade_nova > 0 and '@' in email_novo:
