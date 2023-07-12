@@ -1,5 +1,8 @@
 -- database: c:\Users\Leôncio Cauê\Desktop\apex_dir\__classes\2_databases\classe_1_and_2\mydatabase.db
 
+-- ORDER BY and GROUP BY: 
+   -- by significa 'por', em português. Ou seja, ordene por coluna x, agrupe por coluna y
+
 -- ORDER BY ordena nossos resultados se beaseando em um coluna
 -- Ordenando por nome de forma crescente (ASC)
 SELECT nome, email, idade
