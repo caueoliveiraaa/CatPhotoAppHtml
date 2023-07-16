@@ -1,7 +1,11 @@
+# Importando bibliotecas Python
 import sqlite3
 import os
 
+# Limpar terminal
 os.system('cls')
+
+# Conectar com base de dados
 conexao = sqlite3.connect('mydatabase.db')
 print('Conexão com banco de dados criada com sucesso!')
 cursor = conexao.cursor()
@@ -27,10 +31,10 @@ while True:
             SELECT * FROM usuarios 
         ''')
 
-        # Atribuir resultado do SELECT a uma variável
+        # Atribuir resultado do SELECT a uma variável com fetchall
         resultados = cursor.fetchall()
 
-        # Mostrar resultado retornado do SQL
+        # Mostrar resultado retornado do SQL com um laço for
         for linha in resultados:
             print(linha)
 
@@ -40,6 +44,7 @@ while True:
         id_linha = int(id_linha)
         os.system('cls')
 
+        # Deletar linha onde o id bate como id informado
         cursor.execute(f'''
             DELETE FROM usuarios 
             WHERE id = {id_linha};
