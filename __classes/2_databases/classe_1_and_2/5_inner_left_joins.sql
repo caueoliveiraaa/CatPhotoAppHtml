@@ -1,3 +1,8 @@
+-- Criar tabela Usuarios com mesmas colunas que Programadores
+-- Inserir 10 linhas com dados válidos
+
+
+
 -- Obter uma lista dos programadores juntamente com os usuários 
 -- correspondentes com base em seus endereços de email.
 
@@ -31,7 +36,7 @@ ON Programadores.email = usuarios.email;
 -- o campo "Usuá=ario" será preenchido com NULL.
 
 
--- |--- EX ---|
+-- |--- EX 1 ---| 
 -- Suponha que você queira obter uma lista dos programadores juntamente com os usuários 
 -- correspondentes com base na idade. A consulta deve retornar apenas os programadores 
 -- que possuem um usuário correspondente. Se o resultado final não trouxer 5 linhas ao menos,
@@ -41,13 +46,26 @@ SELECT Programadores.nome AS Programador, usuarios.nome AS Usuario
 FROM Programadores INNER JOIN usuarios 
 ON Programadores.idade = usuarios.idade;
 
--- Insira 20 linhas na tabela contatos e repita o exercícios anterior
+
+
+
+-- |--- EX 2 ---|
+-- Criar tabela Contatos com mesmas colunas que Usuarios + coluna telefone (e outras se desejado)
+-- Insira 20 linhas na tabela Contatos e repita o exercícios anterior
 -- trocando a tabela usuarios pela tabela contatos
 
--- Agora, suponha que você queira obter uma lista dos usuários juntamente 
--- com os programadores correspondentes com base no id.
---  A consulta deve retornar apenas os usuários que possuem um id na tabela 
--- Programadores correspondente junto com o id que bate entre as tabelas.
+
+
+-- |--- EX 3 ---|
+-- Agora, suponha que você queira obter uma lista dos Usuarios juntamente 
+-- com os contatos correspondentes com base no id.
+-- Vamos inserir a coluna ativo em ambas as tabelas do tipo boolean (pesquisar como inserir boolean)
+-- Metade das linhas das duas tabelas tem que estar com o ativo sendo true, e a outra metade false
+-- A consulta deve retornar apenas os usuarios que possuem um id na tabela 
+-- contatos correspondente ao id da tabela usuarios.
+-- Após o ON, adicione um where no final para adicionar ao filtro também
+-- apenas as idades que são maiores que 18 e menores que 30
+-- No Final ordene por nome 
 
 SELECT usuarios.nome AS Usuario,
 usuarios.id AS id_correspondente
@@ -55,8 +73,10 @@ Programadores.nome AS Programador
 FROM Programadores INNER JOIN usuarios
 ON Programadores.id = usuarios.id;
 
--- Insira 10 linhas na tabela contatos e repita o exercícios anterior
--- trocando a tabela usuarios pela tabela contatos
+
+
+-- |--- EX 4 --|
+-- Repetir exercício 3 com a tabela contatos
 
 
 

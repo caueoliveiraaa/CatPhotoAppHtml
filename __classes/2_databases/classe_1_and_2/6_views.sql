@@ -29,7 +29,7 @@ SELECT * FROM ProgramadoresUsuariosEmail;
 
 
 
-
+-- |--- EX 1 ---|
 -- Adicione a coluna status a tabela contatos
 -- Preencha todas as linhas com valores 1 e 0 de forma aleatória
 -- 1 representa que o contato é ativo, 0 é inativo
@@ -46,6 +46,7 @@ SELECT * FROM ContatosAtivos
 
 
 
+-- |--- EX 2---|
 -- Crie uma view chamada "ProgramadoresPorLinguagem"
 -- que agrupará os programadores por linguagem de programação, 
 -- mostrando a contagem de programadores para cada linguagem.
@@ -54,6 +55,7 @@ SELECT * FROM ContatosAtivos
 
 
 
+-- |--- EX 3---|
 -- Crie uma view chamada SomaIdAndIdade que realizará
 -- um select dando um sum na idade e no salario
 -- e mostrando eles como soma_salario e soma_idade
@@ -62,6 +64,7 @@ SELECT * FROM ContatosAtivos
 
 
 
+-- |--- EX 4---|
 --- Crie uma view que realizará um select na tabela Programadores
 -- e um left join na tabela usuários com base nos ids que são iguais  
 
