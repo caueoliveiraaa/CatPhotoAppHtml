@@ -1,6 +1,0 @@
-
-
-
-
-
-- Refaça exercícios de lógica feitos em JavaScript, mas agora em Python
