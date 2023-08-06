@@ -7,9 +7,16 @@
     Templates
     Arquivos estáticos
     Enviando e recebendo dados via front e back
-    Exercícios Flask
+
 
 # Class 4:
     Crie uma aplicação com os alunos, pode ser um sistema de login e senha,
     cadastro de produtos, agenda de contatos... A ideia é rever todos os
     conceitos aprendidos em um exemplo mais complexo.
+
+
+# Exercícios:
+    01 - Criar um sistema básico de login
+    01 - Criar um sistema de cadastro de produtos
+    01 - Criar um sistema agenda de contatos
+    01 - Criar um CRUD para lista de tarefas

@@ -1,13 +1,9 @@
 # CLASS 9:
 	Structure:
-        0 - Daily
         1 - Flask + sql + html + exercises
         2 - Upload
-        3 - Next Class - Daily
 
 # Class 8:
 	Structure:
-		0 - Daily
         1 - Flask + sql + html + exercises
         2 - Upload
-		3 - Next class - Daily

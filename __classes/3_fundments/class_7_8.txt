@@ -1,19 +1,13 @@
 # CLASS 7:
 	Structure:
-        0 - Daily
         1 - Atributos e métodos estáticos
         2 - Herança
         3 - Polimorfismo
         4 - Abstração
         5 - Interface
         6 - Exercícios
-        7 - Upload
-        8 - Next Class - Daily
 
 # Class 8:
 	Structure:
-		0 - Daily
         1 - MySQL com o Python.
         5 - Exercícios
-        6 - Upload
-		7 - Next class - Daily
