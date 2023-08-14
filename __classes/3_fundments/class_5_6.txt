@@ -1,0 +1,90 @@
+# CLASS 5:
+        1 - Atributos e métodos estáticos
+        2 - Herança
+        3 - Polimorfismo
+        4 - Abstração
+        5 - "Interface"
+        6 - Exercícios
+
+1 - Crie uma classe abstrata chamada Animal com métodos falar(), comer() e mover().
+    Crie subclasses Cachorro, Cavalo e Gato que herdam da classe Animal e implementam
+    seus próprios métodos, printando frases diferentes.  
+    Crie e trabalhe com os getters e setters para as subclasses.
+
+2 - Crie uma classe Banco com métodos abstratos depositar(), ver_saldo() e sacar() e 
+    implemente a lógica de cada método. Crie subclasses ContaCorrente e ContaPoupanca
+    que herdam da classe Banco e implementam os métodos de acordo com suas regras específicas.
+    Por exemplo, a subclasse ContaPoupanca pode nao deter o método sacar().
+    Crie atributos privados e publicos nas subclasses ContaCorrente e ContaPoupanca
+    como self.nome, self.saldo, e self.numero_conta por exemplo. Crie objetos dessas
+    classes com informações distintas, invoque os métodos e printe o resultado das
+    operações. 
+
+3 - Crie uma classe base Veiculo com atributos como marca, modelo e métodos como ligar()
+    e desligar(), entre outros. Crie as subclasses Carro e Moto que herdam de Veiculo e
+    implementam seus próprios métodos beaseando-se na abstratação de Veiculo. Em seguida,
+    crie uma classe Garagem que aceita veículos e gerencia o estacionamento usando herança.
+    Crie e trabalhe com os getters e setters para a classe Garagem.
+
+4 - Crie uma classe abstrata Animal com um método emitir_som(). Crie subclasses Cachorro,
+    Gato, Cavalo e Vaca que herdam de Animal e implementam seus próprios sons. Crie uma função
+    que aceita uma lista de animais e faça-os emitir sons usando polimorfismo.
+    Em seguida, crie contrutores para as subclasses dando um atributo nome e cor, e crie
+    objetos dessas subclasses com cores e nomes distintos.
+
+5 - Crie uma classe Alimento com atributos como nome e calorias. Crie subclasses Fruta, Legume
+    e Carne que herdam de Alimento e implementam seus próprios atributos. Crie uma função que aceita 
+    uma lista de alimentos e calcula o total de calorias usando polimorfismo. Para mais precisão no
+    exercício, é ideal pesquisar as calorias dos alimentos e criar objetos das subclasses com seus 
+    respectivos construtores e atributos.
+
+
+# Class 6:
+        1 - MySQL com o Python.
+        2 - Criar conexões com Python
+        3 - Executar SQL com Python 
+        4 - Exercícios
+
+1 - Neste exercício, você vai criar uma aplicação de gerenciamento de alunos usando SQLite3 e programação orientada
+a objetos (POO) em Python. A aplicação permitirá criar, visualizar, atualizar e excluir registros de alunos em uma
+tabela chamada Alunos no banco de dados. Utilize a biblioteca sqlite3 para criar um banco de dados chamado escola.db.
+Crie uma tabela chamada Alunos com os seguintes campos: id, nome, idade e nota. Crie uma classe chamada Aluno.
+Crie os atributos id, nome, idade e nota na classe. Implemente o construtor __init__() para receber os valores dos atributos.
+Crie métodos de getters (get_id(), get_nome(), get_idade(), get_nota()) para acessar os valores dos atributos.
+Crie métodos de setters (set_nome(), set_idade(), set_nota()) para definir os valores dos atributos.
+Crie um método estático na classe Aluno chamado criar_aluno() que aceita os valores de nome, idade e nota como parâmetros.
+Este método deve criar uma instância da classe Aluno com os valores passados e inserir um registro na tabela Alunos com esses valores.
+Crie um método estático chamado buscar_aluno_por_id() que aceita um ID como parâmetro e retorna uma instância de Aluno com os valores
+correspondentes da tabela Alunos. Crie um método estático chamado listar_alunos() que consulta a tabela Alunos e retorna uma lista de
+instâncias de Aluno. Crie um loop principal que exibe um menu para o usuário com opções como "Criar Aluno", "Buscar Aluno por ID", "Listar Alunos"
+e "Sair". Implemente a lógica para cada opção do menu, chamando os métodos correspondentes da classe Aluno. Na opção "Criar Aluno", solicite ao
+usuário que insira nome, idade e nota e, em seguida, chame o método criar_aluno(). Na opção "Buscar Aluno por ID", peça ao usuário para inserir
+um ID e exiba os detalhes do aluno correspondente usando o método buscar_aluno_por_id(). Na opção "Listar Alunos", liste todos os alunos usando o
+método listar_alunos(). Ao sair do loop principal, feche a conexão com o banco de dados.
+
+
+2 - Neste exercício, você criará uma hierarquia de classes envolvendo uma classe abstrata Pessoa, com subclasses Aluno e Professor.
+Cada classe deve implementar métodos específicos, usando conceitos de abstração, herança e programação orientada a objetos (POO).
+Crie uma classe abstrata chamada Pessoa com o método abstrato exibir_info() e calcular_salario().
+Implemente o método exibir_info() para exibir informações básicas da pessoa, como nome e idade.
+Implemente o método calcular_salario() como um método abstrato, que será diferente para cada subclasse.
+Crie uma subclasse Aluno que herde da classe Pessoa.
+Implemente o método exibir_info() para exibir informações específicas de um aluno, como nome, idade e número de matrícula.
+Implemente o método calcular_salario() para alunos, que, neste caso, não se aplica. Pode ser um método vazio.
+Crie uma subclasse Professor que herde da classe Pessoa.
+Implemente o método exibir_info() para exibir informações específicas de um professor, como nome, idade e disciplina lecionada.
+Implemente o método calcular_salario() para professores, calculando o salário com base na carga horária e valor por hora.
+Crie instâncias de Aluno e Professor.
+Chame o método exibir_info() para cada instância para verificar a exibição correta das informações.
+Chame o método calcular_salario() para o professor e exiba o valor calculado.
+Utilize a biblioteca sqlite3 para criar uma tabela chamada Pessoas com os campos tipo (para distinguir entre aluno e professor),
+nome, idade, info_extra (número de matrícula para aluno, disciplina para professor) e salario (nullable para aluno).
+Implemente métodos para adicionar instâncias de Aluno e Professor à tabela Pessoas, extraindo as informações dos métodos exibir_info()
+e calcular_salario() e outros métodos que trabalhem comandos SQL atráves de métodos / funções em Python.
+
+
+
+
+
+
+

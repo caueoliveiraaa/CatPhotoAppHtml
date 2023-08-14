@@ -1,9 +1,7 @@
 # CLASS 9:
-	Structure:
         1 - Flask + sql + html + exercises
         2 - Upload
 
-# Class 8:
-	Structure:
+# Class 10:
         1 - Flask + sql + html + exercises
         2 - Upload
