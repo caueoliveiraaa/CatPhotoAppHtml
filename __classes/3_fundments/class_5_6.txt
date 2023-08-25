@@ -38,12 +38,12 @@
     exercício, é ideal pesquisar as calorias dos alimentos e criar objetos das subclasses com seus 
     respectivos construtores e atributos.
 
-
 # Class 6:
         1 - MySQL com o Python.
         2 - Criar conexões com Python
         3 - Executar SQL com Python 
         4 - Exercícios
+
 
 1 - Neste exercício, você vai criar uma aplicação de gerenciamento de alunos usando SQLite3 e programação orientada
 a objetos (POO) em Python. A aplicação permitirá criar, visualizar, atualizar e excluir registros de alunos em uma
@@ -52,7 +52,7 @@ Crie uma tabela chamada Alunos com os seguintes campos: id, nome, idade e nota. 
 Crie os atributos id, nome, idade e nota na classe. Implemente o construtor __init__() para receber os valores dos atributos.
 Crie métodos de getters (get_id(), get_nome(), get_idade(), get_nota()) para acessar os valores dos atributos.
 Crie métodos de setters (set_nome(), set_idade(), set_nota()) para definir os valores dos atributos.
-Crie um método estático na classe Aluno chamado criar_aluno() que aceita os valores de nome, idade e nota como parâmetros.
+Crie um método estático na classe Aluno chamado criar_aluno() que aceita os valores de nome, idade e nota como parâmetros.  
 Este método deve criar uma instância da classe Aluno com os valores passados e inserir um registro na tabela Alunos com esses valores.
 Crie um método estático chamado buscar_aluno_por_id() que aceita um ID como parâmetro e retorna uma instância de Aluno com os valores
 correspondentes da tabela Alunos. Crie um método estático chamado listar_alunos() que consulta a tabela Alunos e retorna uma lista de
@@ -81,10 +81,3 @@ Utilize a biblioteca sqlite3 para criar uma tabela chamada Pessoas com os campos
 nome, idade, info_extra (número de matrícula para aluno, disciplina para professor) e salario (nullable para aluno).
 Implemente métodos para adicionar instâncias de Aluno e Professor à tabela Pessoas, extraindo as informações dos métodos exibir_info()
 e calcular_salario() e outros métodos que trabalhem comandos SQL atráves de métodos / funções em Python.
-
-
-
-
-
-
-
