@@ -1,7 +1,0 @@
-# CLASS 9:
-        1 - Flask + sql + html + exercises
-        2 - Upload
-
-# Class 10:
-        1 - Flask + sql + html + exercises
-        2 - Upload

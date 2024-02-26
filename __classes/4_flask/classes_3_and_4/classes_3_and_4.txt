@@ -1,5 +1,0 @@
-CLASS 03:
-    Vincular Flask e Banco de Dados, crie um CRUD utilizando os conceitos vistos na última aula.
-
-CLASS 04:
-    Desenvolver uma API em Flask, teste no Postman as requisições GET, POST, PUT e DELETE.

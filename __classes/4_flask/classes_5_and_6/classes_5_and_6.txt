@@ -1,6 +1,0 @@
-CLASS 05:
-    Essa aula o instrutor poderá rever algum conteúdo,
-    passar algum desafio ou ensinar algum conteúdo extra sobre o Flask.
-
-CLASS 06:
-    Desenvolver uma API em Flask, teste no Postman as requisições GET, POST, PUT e DELETE.
